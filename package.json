@@ -1,0 +1,24 @@
+{
+  "name": "saveniukoleh.github.io",
+  "version": "1.3.0",
+  "description": "Portfolio website",
+  "main": "main.js",
+  "homepage": "https://www.saveniukoleh.com/",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saveniukoleh.github.io.git"
+  },
+  "author": "Oleg Saveniuk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saveniukoleh.github.io/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0",
+    "node-sass": "^7.0.0"
+  }
+}
