@@ -4,7 +4,7 @@ const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
-const copyright = document.querySelector('#main-footer')
+const copyright = document.querySelector('#main-footer');
 
 // Set Initial State Of Menu
 let showMenu = false;
@@ -33,4 +33,4 @@ function toggleMenu() {
   }
 }
 
-copyright.innerHTML = `Copyright &copy; ${ new Date().getFullYear() }. All rights reserved`
+copyright.innerHTML = `Copyright &copy; ${ new Date().getFullYear() }. All rights reserved`;
