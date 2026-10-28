@@ -1,0 +1,56 @@
+/* Design tokens
+   Palette is fixed. Spacing and type use fluid clamp() so pages
+   scale between 320px and 1440px without container max-widths
+   that clip headings.
+
+   Breakpoints (layout-driven, not device names):
+   --bp-nav     40em  ~640px  header can show inline nav
+   --bp-split   48em  ~768px  two-column sections
+   --bp-hero    64em  ~1024px hero type + graphic side by side
+   --bp-wide    80em  ~1280px extra horizontal breathing room
+*/
+
+:root {
+  --color-bg: #111214;
+  --color-bg-elevated: #181a1e;
+  --color-text: #f3f0e9;
+  --color-text-muted: #b9b4a8;
+  --color-accent: #ff6b35;
+  --color-accent-2: #b8f36b;
+  --color-line: rgba(243, 240, 233, 0.14);
+  --color-line-strong: rgba(243, 240, 233, 0.28);
+  --color-focus: #b8f36b;
+
+  --font-sans: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+  --font-mono: "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  --text-xs: clamp(0.7rem, 0.65rem + 0.2vw, 0.78rem);
+  --text-sm: clamp(0.85rem, 0.8rem + 0.25vw, 0.95rem);
+  --text-md: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+  --text-lg: clamp(1.15rem, 1rem + 0.7vw, 1.45rem);
+  --text-xl: clamp(1.5rem, 1.1rem + 1.6vw, 2.25rem);
+  --text-display: clamp(2.35rem, 0.6rem + 9vw, 7.5rem);
+
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: clamp(2.5rem, 2rem + 2vw, 4rem);
+  --space-3xl: clamp(3.5rem, 2.5rem + 4vw, 7rem);
+
+  --page-pad: max(1rem, env(safe-area-inset-left, 0px));
+  --page-pad-right: max(1rem, env(safe-area-inset-right, 0px));
+  --page-gutter: clamp(1rem, 4vw, 4.5rem);
+  --page-max: 90rem;
+
+  --header-h: 4rem;
+  --radius: 2px;
+  --line: 1px;
+  --touch: 2.75rem;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration: 180ms;
+}

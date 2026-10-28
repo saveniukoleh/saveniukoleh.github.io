@@ -1,0 +1,282 @@
+.nav-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--touch);
+  min-height: var(--touch);
+  border: var(--line) solid var(--color-line-strong);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+}
+
+.site-nav {
+  display: none;
+}
+
+.site-nav.is-open {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 30;
+  background: var(--color-bg);
+  border-bottom: var(--line) solid var(--color-line);
+  padding: var(--space-lg) var(--page-gutter) var(--space-xl);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.nav-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch);
+  text-decoration: none;
+  font-size: var(--text-lg);
+  font-family: var(--font-serif);
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+}
+
+.lang-switch a,
+.lang-switch span[aria-current="page"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  min-height: var(--touch);
+  padding-inline: 0.45rem;
+  text-decoration: none;
+}
+
+.lang-switch span[aria-current="page"] {
+  color: var(--color-accent-2);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--touch);
+  padding: 0.7rem 1.15rem;
+  border: var(--line) solid var(--color-line-strong);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: #1a0d08;
+  border-color: var(--color-accent);
+}
+
+.btn-primary:hover {
+  color: #1a0d08;
+  filter: brightness(1.05);
+}
+
+.btn-ghost:hover {
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.project-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.project-card {
+  display: grid;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border: var(--line) solid var(--color-line);
+  background: color-mix(in srgb, var(--color-bg-elevated) 70%, transparent);
+  min-width: 0;
+}
+
+.project-card h3 {
+  font-size: var(--text-lg);
+  line-height: 1.15;
+}
+
+.project-visual {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: var(--line) solid var(--color-line);
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 107, 53, 0.22), transparent 42%),
+    radial-gradient(circle at 80% 70%, rgba(184, 243, 107, 0.12), transparent 40%),
+    repeating-linear-gradient(
+      -18deg,
+      transparent,
+      transparent 10px,
+      rgba(243, 240, 233, 0.05) 10px,
+      rgba(243, 240, 233, 0.05) 11px
+    ),
+    #16181c;
+}
+
+.project-visual[data-variant="b"] {
+  background:
+    radial-gradient(circle at 70% 20%, rgba(184, 243, 107, 0.18), transparent 38%),
+    radial-gradient(circle at 20% 80%, rgba(255, 107, 53, 0.16), transparent 46%),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 14px,
+      rgba(243, 240, 233, 0.05) 14px,
+      rgba(243, 240, 233, 0.05) 15px
+    ),
+    #16181c;
+}
+
+.project-visual[data-variant="c"] {
+  background:
+    conic-gradient(from 210deg at 50% 50%, rgba(255, 107, 53, 0.18), transparent 40%, rgba(184, 243, 107, 0.12), transparent 75%),
+    repeating-radial-gradient(circle at 50% 50%, rgba(243, 240, 233, 0.08) 0 1px, transparent 1px 18px),
+    #16181c;
+}
+
+.placeholder-flag {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  padding: 0.25rem 0.45rem;
+  background: var(--color-bg);
+  border: var(--line) solid var(--color-line-strong);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tech-list li {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  color: var(--color-accent-2);
+  border: var(--line) solid color-mix(in srgb, var(--color-accent-2) 35%, transparent);
+  padding: 0.25rem 0.45rem;
+}
+
+.card-link {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+.contact-list {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.contact-list a,
+.contact-list span {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.85rem;
+  min-height: var(--touch);
+  text-decoration: none;
+  border-bottom: var(--line) solid var(--color-line);
+}
+
+.contact-list dt,
+.contact-key {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  min-width: 6.5rem;
+}
+
+.unavailable {
+  color: var(--color-text-muted);
+  font-style: normal;
+}
+
+.hero-canvas-frame {
+  position: relative;
+  min-height: min(58vw, 22rem);
+  border: var(--line) solid var(--color-line);
+  background: #0c0d10;
+  overflow: hidden;
+}
+
+.hero-canvas-frame canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-fallback {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(255, 107, 53, 0.25), transparent 42%),
+    linear-gradient(120deg, transparent 40%, rgba(184, 243, 107, 0.08)),
+    repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 12px,
+      rgba(243, 240, 233, 0.05) 12px,
+      rgba(243, 240, 233, 0.05) 13px
+    );
+}
+
+.hero-canvas-frame.has-canvas .hero-fallback {
+  display: none;
+}
+
+.hero-canvas-caption {
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.experience-preview {
+  display: grid;
+  gap: var(--space-lg);
+  max-width: 42rem;
+}

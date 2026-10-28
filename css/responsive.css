@@ -1,0 +1,106 @@
+/* Layout-driven breakpoints. See tokens.css for the rationale. */
+
+@media (min-width: 40em) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .site-nav,
+  .site-nav.is-open {
+    display: block;
+    position: static;
+    background: none;
+    border: 0;
+    padding: 0;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-lg);
+  }
+
+  .nav-list a {
+    font-size: var(--text-sm);
+    font-family: var(--font-mono);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    min-height: var(--touch);
+  }
+
+  .header-inner {
+    gap: var(--space-xl);
+  }
+
+  .site-nav {
+    margin-left: auto;
+    margin-right: var(--space-md);
+  }
+}
+
+@media (min-width: 48em) {
+  .hero-title .last {
+    margin-left: 8%;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr auto;
+    align-items: start;
+  }
+
+  .section-head {
+    grid-template-columns: minmax(0, 0.4fr) minmax(0, 1fr);
+    align-items: end;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    align-items: stretch;
+    gap: var(--space-2xl);
+  }
+
+  .hero-canvas-frame {
+    min-height: 100%;
+    align-self: stretch;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .project-card:first-child {
+    grid-column: 1 / span 1;
+  }
+}
+
+@media (min-width: 80em) {
+  .hero-title {
+    letter-spacing: -0.045em;
+  }
+
+  .hero-copy {
+    padding-top: var(--space-xl);
+  }
+}
+
+@media (max-height: 30em) and (orientation: landscape) {
+  .hero {
+    padding-block: var(--space-xl);
+  }
+
+  .hero-canvas-frame {
+    min-height: 14rem;
+  }
+}
+
+@media (max-width: 22.5em) {
+  .logo {
+    letter-spacing: 0.1em;
+  }
+}
