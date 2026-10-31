@@ -300,3 +300,34 @@
   gap: var(--space-lg);
   max-width: 42rem;
 }
+
+.experience-list {
+  display: grid;
+}
+
+.experience-list li {
+  display: grid;
+  gap: 0.2rem;
+  padding-block: var(--space-sm);
+  border-top: var(--line) solid var(--color-line);
+}
+
+.experience-list li:last-child {
+  border-bottom: var(--line) solid var(--color-line);
+}
+
+.experience-role {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.about-employment .experience-list {
+  max-width: 42rem;
+}
+
+.about-employment .experience-list li {
+  gap: var(--space-sm);
+  padding-block: var(--space-md);
+}
