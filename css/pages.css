@@ -237,7 +237,12 @@
 }
 
 .workflow + .case-figure,
-.status-split + .case-figure {
+.arch-grid + .case-figure,
+.case-figure + .case-figure,
+.status-split + .case-figure,
+.case-copy + .status-split,
+.section-head + .case-copy + .workflow,
+.case-copy + .workflow {
   margin-top: var(--space-xl);
 }
 

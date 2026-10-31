@@ -13,10 +13,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Resilient Mind — Oleh Saveniuk</title>
-    <meta name="description" content="Case study placeholder for Resilient Mind by Oleh Saveniuk." />
+    <meta
+      name="description"
+      content="A mental health support web application concept. Vue 3, Firebase Authentication, and an AI chatbot through a Cloud Function. A working prototype."
+    />
     <link rel="canonical" href="https://saveniukoleh.github.io/work/resilient-mind/" />
     <link rel="alternate" hreflang="en" href="https://saveniukoleh.github.io/work/resilient-mind/" />
     <link rel="alternate" hreflang="uk" href="https://saveniukoleh.github.io/uk/work/resilient-mind/" />
+    <link rel="alternate" hreflang="x-default" href="https://saveniukoleh.github.io/work/resilient-mind/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Oleh Saveniuk" />
+    <meta property="og:title" content="Resilient Mind — Oleh Saveniuk" />
+    <meta
+      property="og:description"
+      content="Vue 3, Firebase Authentication, and an AI chatbot through a Cloud Function. A working mental health support prototype."
+    />
+    <meta property="og:url" content="https://saveniukoleh.github.io/work/resilient-mind/" />
+    <meta property="og:image" content="https://saveniukoleh.github.io/assets/images/resilient-mind/home.jpg" />
+    <meta property="og:image:alt" content="Landing page of Resilient Mind with Sign in, Create account, and four product cards." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/assets/icons/favicon-32.png" type="image/png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" sizes="180x180" />
@@ -46,21 +63,234 @@
               <span aria-hidden="true">/</span>
               <a href="/uk/work/resilient-mind/" lang="uk" hreflang="uk">UA</a>
             </nav>
-            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">Menu</button>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+              Menu
+            </button>
           </div>
         </div>
       </header>
       <main id="main">
-        <div class="wrap page-intro">
-          <p class="kicker">Case study</p>
-          <h1>Resilient Mind</h1>
-          <p class="stub-note">
-            This is a reserved case-study URL. Project narrative, screenshots, and
-            technical notes will be added from verified material. The graphic on
-            the homepage is a CSS placeholder, not a production screenshot.
-          </p>
-          <p><a class="card-link" href="/#work">Back to work</a></p>
-        </div>
+        <article class="case-study">
+          <header class="case-hero wrap">
+            <div class="case-intro">
+              <p class="kicker">Case study</p>
+              <h1>Resilient Mind</h1>
+              <p class="case-subtitle">
+                A web application concept for accessible emotional support, through AI-assisted conversations and self-guided exercises.
+              </p>
+              <dl class="case-meta">
+                <div>
+                  <dt>Role</dt>
+                  <dd>Solo developer</dd>
+                </div>
+                <div>
+                  <dt>Period</dt>
+                  <dd>2025–2026</dd>
+                </div>
+                <div>
+                  <dt>Project type</dt>
+                  <dd>Mental health support / AI integration</dd>
+                </div>
+              </dl>
+              <ul class="tech-list" aria-label="Stack">
+                <li>Vue 3</li>
+                <li>TypeScript</li>
+                <li>Firebase</li>
+                <li>OpenAI</li>
+                <li>GitHub Pages</li>
+              </ul>
+            </div>
+            <figure class="case-figure shot">
+              <img
+                src="/assets/images/resilient-mind/home.jpg"
+                width="858"
+                height="573"
+                alt="Landing page of the live Resilient Mind app. The navigation offers Sign in and Create account. Four cards read AI Chat Support, Book Therapy, Recovery Programs, and Community."
+              />
+              <figcaption>
+                Landing page. The cards describe the product idea. Therapy booking and the community are unfinished modules.
+              </figcaption>
+            </figure>
+          </header>
+
+          <section class="section" aria-labelledby="overview-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Overview</p>
+                <h2 id="overview-title">Emotional support, built as an application prototype.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Resilient Mind is a mental health support concept for people affected by the war in Ukraine and for anyone seeking emotional support. The product vision includes an AI chatbot, therapy booking, recovery programs, and a community.
+                </p>
+                <p>
+                  The implemented application provides email and password accounts, an AI-assisted chat for signed-in users, and self-guided breathing and CBT exercises in the browser.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="role-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">My role</p>
+                <h2 id="role-title">Solo developer across the stack.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  I designed and built the Vue 3 and TypeScript application end to end: frontend architecture and routing, Pinia state, Firebase Authentication and Firestore integration, and the callable Cloud Function that connects to OpenAI. Every commit in the repository is mine.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="features-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Implemented features</p>
+                <h2 id="features-title">What ships in the prototype.</h2>
+              </div>
+              <div class="arch-grid">
+                <article>
+                  <h3>Authentication</h3>
+                  <p>Email and password sign-up and sign-in with Firebase Authentication. Protected routes require a signed-in session.</p>
+                </article>
+                <article>
+                  <h3>AI chatbot</h3>
+                  <p>OpenAI <code>gpt-4o-mini</code> through the authenticated Cloud Function <code>handleAIChat</code>. The chat is available after sign-in.</p>
+                </article>
+                <article>
+                  <h3>Self-guided exercises</h3>
+                  <p>Browser-based breathing patterns and CBT forms (thought record and behavioral activation). Progress is not persisted.</p>
+                </article>
+              </div>
+              <figure class="case-figure shot">
+                <img
+                  src="/assets/images/resilient-mind/login.jpg"
+                  width="858"
+                  height="594"
+                  alt="Sign-in screen with email and password fields and a Sign in button."
+                />
+                <figcaption>Sign-in — Firebase Authentication.</figcaption>
+              </figure>
+              <figure class="case-figure shot">
+                <img
+                  src="/assets/images/resilient-mind/chat.jpg"
+                  width="858"
+                  height="919"
+                  alt="Signed-in AI Support Chat. A disclaimer says the assistant is not a replacement for professional care. The thread shows a welcome message, the word Hello, and a short reply."
+                />
+                <figcaption>AI chat after sign-in — messages go through the deployed Cloud Function.</figcaption>
+              </figure>
+              <figure class="case-figure shot">
+                <img
+                  src="/assets/images/resilient-mind/breathing.jpg"
+                  width="858"
+                  height="918"
+                  alt="Breathing exercise with a blue circle labeled Ready, a timer at 0:00, Start and Reset buttons, a five-minute duration, and the 4-7-8 pattern selected."
+                />
+                <figcaption>Breathing exercise — runs locally in the browser.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="architecture-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Architecture</p>
+                <h2 id="architecture-title">From the UI to the OpenAI model.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Vue 3 + Pinia → Firebase Cloud Function (<code>handleAIChat</code>) → OpenAI API (<code>gpt-4o-mini</code>).
+                </p>
+                <p>
+                  <code>handleAIChat</code> runs only for signed-in users through Firebase Authentication. The OpenAI key is stored in a Firebase secret, not in the client bundle. There is no separate application server.
+                </p>
+              </div>
+              <ol class="workflow">
+                <li>
+                  <span>01</span>
+                  <p>Vue 3 and TypeScript with Vue Router and Pinia for application structure and state.</p>
+                </li>
+                <li>
+                  <span>02</span>
+                  <p>Server-side OpenAI integration through Firebase Cloud Functions.</p>
+                </li>
+                <li>
+                  <span>03</span>
+                  <p>GitHub Pages deployment with Vite base <code>/resilient-mind/</code> and SPA fallback for direct routes.</p>
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="status-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Project status</p>
+                <h2 id="status-title">Prototype scope.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  A working application prototype with authentication, AI-assisted conversations and self-guided exercises. Therapist booking, community features and advanced recovery modules remain unfinished.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="stack-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Technology stack</p>
+                <h2 id="stack-title">What the running application uses.</h2>
+              </div>
+              <ul class="tech-list" aria-label="Technologies">
+                <li>Vue 3</li>
+                <li>TypeScript</li>
+                <li>Vite</li>
+                <li>Vue Router</li>
+                <li>Pinia</li>
+                <li>Tailwind CSS</li>
+                <li>Firebase Authentication</li>
+                <li>Cloud Firestore</li>
+                <li>Firebase Cloud Functions</li>
+                <li>OpenAI API</li>
+                <li>GPT-4o-mini</li>
+                <li>GitHub Actions</li>
+                <li>GitHub Pages</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="links-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Links</p>
+                <h2 id="links-title">Application and source.</h2>
+              </div>
+              <ul class="resource-list">
+                <li>
+                  <p class="kicker">Live application</p>
+                  <p class="pub-title">
+                    <a href="https://saveniukoleh.com/resilient-mind/" target="_blank" rel="noopener noreferrer">saveniukoleh.com/resilient-mind</a>
+                  </p>
+                  <p class="muted">Landing page, account flows, exercises, and AI chat after sign-in.</p>
+                </li>
+                <li>
+                  <p class="kicker">Repository</p>
+                  <p class="pub-title">
+                    <a href="https://github.com/saveniukoleh/resilient-mind" target="_blank" rel="noopener noreferrer">github.com/saveniukoleh/resilient-mind</a>
+                  </p>
+                  <p class="muted">Source for the Vue app, Firebase setup, and deployment workflow.</p>
+                </li>
+              </ul>
+              <p class="case-back">
+                <a class="card-link" href="/#work">Back to work</a>
+              </p>
+            </div>
+          </section>
+        </article>
       </main>
       <footer class="site-footer">
         <div class="wrap footer-grid">
@@ -70,6 +300,10 @@
               <li><a href="/about/">About</a></li>
               <li><a href="/#contact">Contact</a></li>
             </ul>
+          </nav>
+          <nav class="footer-langs" aria-label="Language">
+            <span aria-current="page">English</span>
+            <a href="/uk/work/resilient-mind/" lang="uk" hreflang="uk">Українська</a>
           </nav>
           <p class="copyright">© <span data-copyright-year></span> Oleh Saveniuk. All rights reserved.</p>
         </div>

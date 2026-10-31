@@ -13,10 +13,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Resilient Mind — Олег Савенюк</title>
-    <meta name="description" content="Заглушка кейсу Resilient Mind Олега Савенюка." />
+    <meta
+      name="description"
+      content="Концепт вебзастосунку підтримки психічного здоров’я. Vue 3, Firebase Authentication і чат-бот зі штучним інтелектом через Cloud Function. Робочий прототип."
+    />
     <link rel="canonical" href="https://saveniukoleh.github.io/uk/work/resilient-mind/" />
     <link rel="alternate" hreflang="en" href="https://saveniukoleh.github.io/work/resilient-mind/" />
     <link rel="alternate" hreflang="uk" href="https://saveniukoleh.github.io/uk/work/resilient-mind/" />
+    <link rel="alternate" hreflang="x-default" href="https://saveniukoleh.github.io/work/resilient-mind/" />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Oleh Saveniuk" />
+    <meta property="og:title" content="Resilient Mind — Олег Савенюк" />
+    <meta
+      property="og:description"
+      content="Vue 3, Firebase Authentication і чат-бот зі штучним інтелектом через Cloud Function. Робочий прототип підтримки."
+    />
+    <meta property="og:url" content="https://saveniukoleh.github.io/uk/work/resilient-mind/" />
+    <meta property="og:image" content="https://saveniukoleh.github.io/assets/images/resilient-mind/home.jpg" />
+    <meta property="og:image:alt" content="Головна сторінка Resilient Mind із кнопками Sign in і Create account та чотирма картками продукту." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/assets/icons/favicon-32.png" type="image/png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" sizes="180x180" />
@@ -46,21 +63,234 @@
               <span aria-hidden="true">/</span>
               <span aria-current="page">UA</span>
             </nav>
-            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">Меню</button>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+              Меню
+            </button>
           </div>
         </div>
       </header>
       <main id="main">
-        <div class="wrap page-intro">
-          <p class="kicker">Кейс</p>
-          <h1>Resilient Mind</h1>
-          <p class="stub-note">
-            Це зарезервована адреса кейсу. Опис, знімки екрана та технічні нотатки
-            з’являться з перевірених матеріалів. Графіка на головній — CSS-заглушка,
-            а не продакшен-скріншот.
-          </p>
-          <p><a class="card-link" href="/uk/#work">До робіт</a></p>
-        </div>
+        <article class="case-study">
+          <header class="case-hero wrap">
+            <div class="case-intro">
+              <p class="kicker">Кейс</p>
+              <h1>Resilient Mind</h1>
+              <p class="case-subtitle">
+                Концепт вебзастосунку для доступної емоційної підтримки: розмови з допомогою ШІ та вправи для самостійного проходження.
+              </p>
+              <dl class="case-meta">
+                <div>
+                  <dt>Роль</dt>
+                  <dd>Самостійний розробник</dd>
+                </div>
+                <div>
+                  <dt>Період</dt>
+                  <dd>2025–2026</dd>
+                </div>
+                <div>
+                  <dt>Тип проєкту</dt>
+                  <dd>Підтримка психічного здоров’я / інтеграція ШІ</dd>
+                </div>
+              </dl>
+              <ul class="tech-list" aria-label="Стек">
+                <li>Vue 3</li>
+                <li>TypeScript</li>
+                <li>Firebase</li>
+                <li>OpenAI</li>
+                <li>GitHub Pages</li>
+              </ul>
+            </div>
+            <figure class="case-figure shot">
+              <img
+                src="/assets/images/resilient-mind/home.jpg"
+                width="858"
+                height="573"
+                alt="Головна живого застосунку Resilient Mind. У навігації Sign in і Create account. Чотири картки: AI Chat Support, Book Therapy, Recovery Programs і Community."
+              />
+              <figcaption>
+                Головна сторінка. Картки описують задум продукту. Запис на терапію і спільнота — незавершені модулі.
+              </figcaption>
+            </figure>
+          </header>
+
+          <section class="section" aria-labelledby="overview-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Огляд</p>
+                <h2 id="overview-title">Емоційна підтримка як прототип застосунку.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Resilient Mind — концепт підтримки психічного здоров’я для людей, яких зачепила війна в Україні, і для тих, хто шукає емоційну підтримку. Задум продукту включає чат-бота, запис на терапію, програми відновлення і спільноту.
+                </p>
+                <p>
+                  Реалізований застосунок дає облікові записи через email і пароль, чат зі ШІ для авторизованих користувачів і самостійні дихальні та КПТ-вправи в браузері.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="role-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Моя роль</p>
+                <h2 id="role-title">Самостійний розробник усього стеку.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Я спроєктував і зібрав застосунок на Vue 3 і TypeScript: архітектуру фронтенду та маршрутизацію, стан Pinia, інтеграцію Firebase Authentication і Firestore, а також викликану Cloud Function для OpenAI. Усі коміти в репозиторії — мої.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="features-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Реалізовані можливості</p>
+                <h2 id="features-title">Що входить у прототип.</h2>
+              </div>
+              <div class="arch-grid">
+                <article>
+                  <h3>Автентифікація</h3>
+                  <p>Реєстрація та вхід через email і пароль у Firebase Authentication. Захищені маршрути вимагають активної сесії.</p>
+                </article>
+                <article>
+                  <h3>Чат-бот зі ШІ</h3>
+                  <p>OpenAI <code>gpt-4o-mini</code> через автентифіковану Cloud Function <code>handleAIChat</code>. Чат доступний після входу.</p>
+                </article>
+                <article>
+                  <h3>Самостійні вправи</h3>
+                  <p>Дихальні техніки та КПТ-форми (запис думок і поведінкова активація) в браузері. Прогрес не зберігається.</p>
+                </article>
+              </div>
+              <figure class="case-figure shot">
+                <img
+                  src="/assets/images/resilient-mind/login.jpg"
+                  width="858"
+                  height="594"
+                  alt="Екран входу з полями email і пароля та кнопкою Sign in."
+                />
+                <figcaption>Вхід — Firebase Authentication.</figcaption>
+              </figure>
+              <figure class="case-figure shot">
+                <img
+                  src="/assets/images/resilient-mind/chat.jpg"
+                  width="858"
+                  height="919"
+                  alt="Чат AI Support Chat після входу. Попередження каже, що асистент не замінює професійну допомогу. У стрічці привітання, слово Hello і коротка відповідь."
+                />
+                <figcaption>Чат зі ШІ після входу — повідомлення проходять через розгорнуту Cloud Function.</figcaption>
+              </figure>
+              <figure class="case-figure shot">
+                <img
+                  src="/assets/images/resilient-mind/breathing.jpg"
+                  width="858"
+                  height="918"
+                  alt="Дихальна вправа: синє коло з написом Ready, таймер 0:00, кнопки Start і Reset, тривалість п’ять хвилин і вибраний шаблон 4-7-8."
+                />
+                <figcaption>Дихальна вправа — виконується локально в браузері.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="architecture-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Архітектура</p>
+                <h2 id="architecture-title">Запит від інтерфейсу до моделі OpenAI.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Vue 3 + Pinia → Firebase Cloud Function (<code>handleAIChat</code>) → OpenAI API (<code>gpt-4o-mini</code>).
+                </p>
+                <p>
+                  Функцію <code>handleAIChat</code> можна викликати лише після входу через Firebase Authentication. Ключ OpenAI зберігається в секреті Firebase і не потрапляє в клієнтську збірку. Окремого сервера застосунку немає.
+                </p>
+              </div>
+              <ol class="workflow">
+                <li>
+                  <span>01</span>
+                  <p>Vue 3, TypeScript, Vue Router і Pinia — структура застосунку та стан.</p>
+                </li>
+                <li>
+                  <span>02</span>
+                  <p>OpenAI на сервері через Firebase Cloud Functions.</p>
+                </li>
+                <li>
+                  <span>03</span>
+                  <p>GitHub Pages, база Vite <code>/resilient-mind/</code>, SPA fallback для прямих посилань.</p>
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="status-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Стан проєкту</p>
+                <h2 id="status-title">Обсяг прототипу.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Робочий прототип застосунку з автентифікацією, розмовами зі ШІ та самостійними вправами. Запис до терапевта, функції спільноти та розширені модулі відновлення лишаються незавершеними.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="stack-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Технології</p>
+                <h2 id="stack-title">Чим користується працюючий застосунок.</h2>
+              </div>
+              <ul class="tech-list" aria-label="Технології">
+                <li>Vue 3</li>
+                <li>TypeScript</li>
+                <li>Vite</li>
+                <li>Vue Router</li>
+                <li>Pinia</li>
+                <li>Tailwind CSS</li>
+                <li>Firebase Authentication</li>
+                <li>Cloud Firestore</li>
+                <li>Firebase Cloud Functions</li>
+                <li>OpenAI API</li>
+                <li>GPT-4o-mini</li>
+                <li>GitHub Actions</li>
+                <li>GitHub Pages</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="links-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Посилання</p>
+                <h2 id="links-title">Застосунок і код.</h2>
+              </div>
+              <ul class="resource-list">
+                <li>
+                  <p class="kicker">Живий застосунок</p>
+                  <p class="pub-title">
+                    <a href="https://saveniukoleh.com/resilient-mind/" target="_blank" rel="noopener noreferrer">saveniukoleh.com/resilient-mind</a>
+                  </p>
+                  <p class="muted">Головна, облікові записи, вправи та чат зі ШІ після входу.</p>
+                </li>
+                <li>
+                  <p class="kicker">Репозиторій</p>
+                  <p class="pub-title">
+                    <a href="https://github.com/saveniukoleh/resilient-mind" target="_blank" rel="noopener noreferrer">github.com/saveniukoleh/resilient-mind</a>
+                  </p>
+                  <p class="muted">Код застосунку на Vue, налаштування Firebase і workflow розгортання.</p>
+                </li>
+              </ul>
+              <p class="case-back">
+                <a class="card-link" href="/uk/#work">До робіт</a>
+              </p>
+            </div>
+          </section>
+        </article>
       </main>
       <footer class="site-footer">
         <div class="wrap footer-grid">
@@ -70,6 +300,10 @@
               <li><a href="/uk/about/">Про мене</a></li>
               <li><a href="/uk/#contact">Контакт</a></li>
             </ul>
+          </nav>
+          <nav class="footer-langs" aria-label="Мова">
+            <a href="/work/resilient-mind/" lang="en" hreflang="en">English</a>
+            <span aria-current="page">Українська</span>
           </nav>
           <p class="copyright">© <span data-copyright-year></span> Oleh Saveniuk. Усі права захищено.</p>
         </div>
