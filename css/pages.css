@@ -227,6 +227,15 @@
   letter-spacing: -0.02em;
 }
 
+.about-skills .tech-list {
+  margin-top: var(--space-sm);
+}
+
+.case-cta {
+  max-width: 42rem;
+  margin-top: var(--space-xl);
+}
+
 .case-back {
   margin-top: var(--space-2xl);
 }
