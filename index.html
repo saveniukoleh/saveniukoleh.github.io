@@ -90,10 +90,14 @@
               <a class="btn btn-ghost" href="#contact">Contact</a>
             </div>
           </div>
-          <div class="hero-canvas-frame" aria-hidden="true">
-            <div class="hero-fallback"></div>
-            <canvas data-hero-canvas></canvas>
-            <p class="hero-canvas-caption">Field study · pointer reactive</p>
+          <div class="hero-canvas-frame">
+            <div class="hero-fallback" aria-hidden="true"></div>
+            <canvas
+              data-hero-canvas
+              tabindex="0"
+              aria-label="Drag to turn the Möbius band. Arrow keys work when this is focused."
+            ></canvas>
+            <p class="hero-canvas-caption">Möbius · drag</p>
           </div>
         </section>
 
@@ -183,7 +187,7 @@
             <ul class="contact-list">
               <li>
                 <span class="contact-key">Email</span>
-                <span class="unavailable">Not published on this site yet</span>
+                <a href="mailto:oleh.saveniuk@gmail.com">oleh.saveniuk@gmail.com</a>
               </li>
               <li>
                 <span class="contact-key">GitHub</span>
@@ -191,11 +195,11 @@
               </li>
               <li>
                 <span class="contact-key">LinkedIn</span>
-                <span class="unavailable">URL not supplied yet</span>
+                <a href="https://www.linkedin.com/in/saveniukoleh/" rel="noopener noreferrer">linkedin.com/in/saveniukoleh</a>
               </li>
               <li>
                 <span class="contact-key">CV</span>
-                <span class="unavailable">File not added yet</span>
+                <a href="/assets/documents/Oleh-Saveniuk-CV.pdf" download>Oleh-Saveniuk-CV.pdf</a>
               </li>
             </ul>
           </div>
@@ -215,7 +219,7 @@
             <span aria-current="page">English</span>
             <a href="/uk/" lang="uk" hreflang="uk">Українська</a>
           </nav>
-          <p class="copyright">© 2026 Oleh Saveniuk. All rights reserved.</p>
+          <p class="copyright">© <span data-copyright-year></span> Oleh Saveniuk. All rights reserved.</p>
         </div>
       </footer>
     </div>

@@ -90,10 +90,14 @@
               <a class="btn btn-ghost" href="#contact">Контакт</a>
             </div>
           </div>
-          <div class="hero-canvas-frame" aria-hidden="true">
-            <div class="hero-fallback"></div>
-            <canvas data-hero-canvas></canvas>
-            <p class="hero-canvas-caption">Поле · реагує на вказівник</p>
+          <div class="hero-canvas-frame">
+            <div class="hero-fallback" aria-hidden="true"></div>
+            <canvas
+              data-hero-canvas
+              tabindex="0"
+              aria-label="Потягніть, щоб обертати стрічку Мебіуса. Коли елемент у фокусі, працюють клавіші-стрілки."
+            ></canvas>
+            <p class="hero-canvas-caption">Мебіус · жест</p>
           </div>
         </section>
 
@@ -183,7 +187,7 @@
             <ul class="contact-list">
               <li>
                 <span class="contact-key">Email</span>
-                <span class="unavailable">Ще не опубліковано на цьому сайті</span>
+                <a href="mailto:oleh.saveniuk@gmail.com">oleh.saveniuk@gmail.com</a>
               </li>
               <li>
                 <span class="contact-key">GitHub</span>
@@ -191,11 +195,11 @@
               </li>
               <li>
                 <span class="contact-key">LinkedIn</span>
-                <span class="unavailable">URL ще не надано</span>
+                <a href="https://www.linkedin.com/in/saveniukoleh/" rel="noopener noreferrer">linkedin.com/in/saveniukoleh</a>
               </li>
               <li>
                 <span class="contact-key">CV</span>
-                <span class="unavailable">Файл ще не додано</span>
+                <a href="/assets/documents/Oleh-Saveniuk-CV.pdf" download>Oleh-Saveniuk-CV.pdf</a>
               </li>
             </ul>
           </div>
@@ -215,7 +219,7 @@
             <a href="/" lang="en" hreflang="en">English</a>
             <span aria-current="page">Українська</span>
           </nav>
-          <p class="copyright">© 2026 Oleh Saveniuk. Усі права захищено.</p>
+          <p class="copyright">© <span data-copyright-year></span> Oleh Saveniuk. Усі права захищено.</p>
         </div>
       </footer>
     </div>

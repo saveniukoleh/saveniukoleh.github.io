@@ -65,7 +65,8 @@ main {
 
 .section-head h2 {
   font-size: var(--text-xl);
-  max-width: 18ch;
+  max-width: 22em;
+  text-wrap: balance;
 }
 
 .site-footer {
