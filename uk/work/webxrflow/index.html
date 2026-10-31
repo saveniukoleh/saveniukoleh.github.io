@@ -13,10 +13,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>WebXRFlow — Олег Савенюк</title>
-    <meta name="description" content="Заглушка кейсу WebXRFlow Олега Савенюка." />
+    <meta
+      name="description"
+      content="Рання браузерна CMS для сцен WebXR. Vue 3 і Firebase ведуть облікові записи та записи проєктів. Редактор 3D-сцени й сеанси AR/VR у цьому репозиторії не реалізовані."
+    />
     <link rel="canonical" href="https://saveniukoleh.github.io/uk/work/webxrflow/" />
     <link rel="alternate" hreflang="en" href="https://saveniukoleh.github.io/work/webxrflow/" />
     <link rel="alternate" hreflang="uk" href="https://saveniukoleh.github.io/uk/work/webxrflow/" />
+    <link rel="alternate" hreflang="x-default" href="https://saveniukoleh.github.io/work/webxrflow/" />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Oleh Saveniuk" />
+    <meta property="og:title" content="WebXRFlow — Олег Савенюк" />
+    <meta
+      property="og:description"
+      content="Vue 3 і Firebase для облікових записів і записів проєктів. Редактор 3D-сцени й сеанси WebXR у цьому репозиторії не реалізовані."
+    />
+    <meta property="og:url" content="https://saveniukoleh.github.io/uk/work/webxrflow/" />
+    <meta property="og:image" content="https://saveniukoleh.github.io/assets/images/webxrflow/home.jpg" />
+    <meta property="og:image:alt" content="Маркетингова головна WebXRFlow з назвою WebXR CMS." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/assets/icons/favicon-32.png" type="image/png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" sizes="180x180" />
@@ -46,21 +63,243 @@
               <span aria-hidden="true">/</span>
               <span aria-current="page">UA</span>
             </nav>
-            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">Меню</button>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+              Меню
+            </button>
           </div>
         </div>
       </header>
       <main id="main">
-        <div class="wrap page-intro">
-          <p class="kicker">Кейс</p>
-          <h1>WebXRFlow</h1>
-          <p class="stub-note">
-            Це зарезервована адреса кейсу. Опис, знімки екрана та технічні нотатки
-            з’являться з перевірених матеріалів. Графіка на головній — CSS-заглушка,
-            а не продакшен-скріншот.
-          </p>
-          <p><a class="card-link" href="/uk/#work">До робіт</a></p>
-        </div>
+        <article class="case-study">
+          <header class="case-hero wrap">
+            <div class="case-intro">
+              <p class="kicker">Кейс</p>
+              <h1>WebXRFlow</h1>
+              <p class="case-subtitle">
+                Рання браузерна CMS для сцен WebXR. Облікові записи й записи проєктів уже є. Редактор 3D-сцени й сеанси AR/VR у цьому репозиторії не реалізовані.
+              </p>
+              <dl class="case-meta">
+                <div>
+                  <dt>Роль</dt>
+                  <dd>Самостійний розробник</dd>
+                </div>
+                <div>
+                  <dt>Період</dt>
+                  <dd>2025–2026</dd>
+                </div>
+                <div>
+                  <dt>Тип проєкту</dt>
+                  <dd>Портфоліо, SPA</dd>
+                </div>
+              </dl>
+              <ul class="tech-list" aria-label="Стек">
+                <li>Vue 3</li>
+                <li>TypeScript</li>
+                <li>Pinia</li>
+                <li>Firebase</li>
+                <li>GitHub Pages</li>
+              </ul>
+            </div>
+            <figure class="case-figure shot">
+              <img
+                src="/assets/images/webxrflow/home.jpg"
+                width="858"
+                height="560"
+                alt="Маркетингова головна живого демо WebXRFlow. У навігації: WebXR CMS, Gallery, Sign In і Get Started."
+              />
+              <figcaption>
+                Маркетингова головна. В інтерфейсі продукт називається WebXR CMS. Заголовок описує мету продукту. Редагування перетягуванням у цьому репозиторії не реалізоване.
+              </figcaption>
+            </figure>
+          </header>
+
+          <section class="section" aria-labelledby="overview-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Огляд</p>
+                <h2 id="overview-title">Панель проєктів перед майбутнім редактором.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Задум — місце, де авторизований користувач створює проєкт, редагує 3D-сцену, зберігає її як JSON і відкриває в браузері, в AR або у VR. Працює зріз облікових записів і проєктів: вхід через email і Google, панель, яка створює, показує й видаляє документи, і маршрути, залишені для редактора, галереї та переглядача.
+                </p>
+                <p>
+                  Текст продукту звертається до людей, які роблять AR- і VR-сцени у вебі. Плани описують цю роботу як MVP одного розробника. На головній також є рядок «Join thousands of creators». Підрахунку користувачів за цим рядком у репозиторії немає.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="role-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Моя роль</p>
+                <h2 id="role-title">Архітектура, застосунок на Vue і Firebase.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Я зібрав структуру застосунку, екрани й підключення Firebase Authentication та Firestore. Автором усіх комітів на <code>main</code> є я. Коміти жовтня 2026 публікують демо на GitHub Pages.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="build-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Основна реалізація</p>
+                <h2 id="build-title">Вхід, потім документ проєкту.</h2>
+              </div>
+              <ol class="workflow">
+                <li>
+                  <span>01</span>
+                  <p>Реєстрація або вхід через email і пароль, або через вікно Google. Перший вхід записує профіль у <code>users/{uid}</code>.</p>
+                </li>
+                <li>
+                  <span>02</span>
+                  <p>Панель показує проєкти цієї людини, створює новий із діалога і видаляє його після підтвердження.</p>
+                </li>
+                <li>
+                  <span>03</span>
+                  <p>Новий документ зберігає назву, опис, <code>isPublished: false</code> і <code>sceneData</code> з версією <code>1.0</code> та порожнім масивом <code>objects</code>.</p>
+                </li>
+                <li>
+                  <span>04</span>
+                  <p>Звідти відкриваються маршрути редактора, галереї й переглядача. Вони не завантажують документ і не малюють сцену.</p>
+                </li>
+              </ol>
+              <figure class="case-figure shot">
+                <img
+                  src="/assets/images/webxrflow/login.jpg"
+                  width="858"
+                  height="720"
+                  alt="Екран входу з полями email і пароля, кнопкою Sign in і Continue with Google."
+                />
+                <figcaption>Вхід. Email і пароль, а також вікно Google, викликають Firebase Authentication.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="architecture-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Архітектура</p>
+                <h2 id="architecture-title">Vue і Pinia перед Firebase.</h2>
+              </div>
+              <figure class="case-figure">
+                <div class="arch-grid">
+                  <article>
+                    <h3>Застосунок Vue</h3>
+                    <p>Маршрутизатор, Pinia й екрани. Захист маршрутів читає сховище автентифікації і сам Firebase не викликає.</p>
+                  </article>
+                  <article>
+                    <h3>Сховище автентифікації</h3>
+                    <p>Pinia говорить з Firebase Authentication і записує профіль <code>users/{uid}</code> у Firestore.</p>
+                  </article>
+                  <article>
+                    <h3>Сховище проєктів</h3>
+                    <p>Pinia говорить із колекцією <code>projects</code>. Панель — екран, який цим користується.</p>
+                  </article>
+                </div>
+                <figcaption>
+                  Редактор, галерея й переглядач тримають локальний стан. Допоміжні функції завантаження файлів є в репозиторії, і жоден екран їх не викликає. Власного сервера немає.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="challenges-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Інженерні задачі</p>
+                <h2 id="challenges-title">Підшлях, запит проєктів і захист маршрутів.</h2>
+              </div>
+              <ol class="workflow">
+                <li>
+                  <span>01</span>
+                  <p>Демо живе за адресою <code>/webxrflow/</code> на вже наявному сайті, а локальна розробка лишається на <code>/</code>. База Vite стає <code>/webxrflow/</code> лише коли задано <code>GITHUB_PAGES</code>, і маршрутизатор бере цю базу. GitHub Pages не переписує невідомі шляхи, тож збірка копіює <code>index.html</code> у <code>404.html</code>. Глибокі посилання повертають HTTP 404 разом із оболонкою застосунку, і Vue все одно може стартувати.</p>
+                </li>
+                <li>
+                  <span>02</span>
+                  <p>Список проєктів людини фільтрує <code>userId</code> і сортує за <code>updatedAt</code> у браузері. Так не потрібен складений індекс Firestore. Запит опублікованих проєктів досі містить <code>orderBy</code>, і жоден екран його не викликає.</p>
+                </li>
+                <li>
+                  <span>03</span>
+                  <p>Firebase відновлює користувача асинхронно. Захист маршруту вважає порожнього користувача виходом і не чекає, тож оновлення панелі може відкрити сторінку входу. Ця прогалина досі відкрита.</p>
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="status-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Стан проєкту</p>
+                <h2 id="status-title">Робочі записи, екрани-прототипи.</h2>
+              </div>
+              <div class="status-split">
+                <article>
+                  <h3>У цьому репозиторії</h3>
+                  <ul class="status-list">
+                    <li>Реєстрація через email і пароль, вхід Google і вихід.</li>
+                    <li>Створення, список і видалення документів проєктів.</li>
+                    <li>Порожнє поле JSON сцени в кожному новому проєкті.</li>
+                    <li>Клієнтські маршрути й публікація на GitHub Pages.</li>
+                    <li>Перевірка підтримки WebXR на екрані переглядача.</li>
+                  </ul>
+                </article>
+                <article>
+                  <h3>На пізнішу фазу</h3>
+                  <ul class="status-list">
+                    <li>Рендерер 3D, редактор сцени й трансформації об’єктів.</li>
+                    <li>Сеанси AR і сеанси VR.</li>
+                    <li>Публікація і галерея з даними Firestore.</li>
+                    <li>Завантаження файлів з інтерфейсу.</li>
+                  </ul>
+                </article>
+              </div>
+              <figure class="case-figure shot">
+                <img
+                  src="/assets/images/webxrflow/viewer.jpg"
+                  width="858"
+                  height="800"
+                  alt="Оболонка переглядача на темному екрані. Позначка стану: WebXR Not Supported. Текст каже, що занурена сцена з’явиться після реалізації."
+                />
+                <figcaption>
+                  Оболонка переглядача в настільному браузері. Позначка — результат <code>isSessionSupported</code> для занурених AR і VR. Start AR і Start VR вимкнені й не відкривають сеанс. «Amazing AR Experience» — текст-заглушка, не збережений проєкт.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="links-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Посилання</p>
+                <h2 id="links-title">Демо і код.</h2>
+              </div>
+              <ul class="resource-list">
+                <li>
+                  <p class="kicker">Живе демо</p>
+                  <p class="pub-title">
+                    <a href="https://saveniukoleh.com/webxrflow/" target="_blank" rel="noopener noreferrer">saveniukoleh.com/webxrflow</a>
+                  </p>
+                  <p class="muted">Маркетингова сторінка, вхід і оболонка переглядача з цього репозиторію.</p>
+                </li>
+                <li>
+                  <p class="kicker">Репозиторій</p>
+                  <p class="pub-title">
+                    <a href="https://github.com/saveniukoleh/webxrflow" target="_blank" rel="noopener noreferrer">github.com/saveniukoleh/webxrflow</a>
+                  </p>
+                  <p class="muted">Застосунок на Vue 3, клієнтські модулі Firebase і workflow GitHub Pages.</p>
+                </li>
+              </ul>
+              <p class="case-back">
+                <a class="card-link" href="/uk/#work">До робіт</a>
+              </p>
+            </div>
+          </section>
+        </article>
       </main>
       <footer class="site-footer">
         <div class="wrap footer-grid">
@@ -70,6 +309,10 @@
               <li><a href="/uk/about/">Про мене</a></li>
               <li><a href="/uk/#contact">Контакт</a></li>
             </ul>
+          </nav>
+          <nav class="footer-langs" aria-label="Мова">
+            <a href="/work/webxrflow/" lang="en" hreflang="en">English</a>
+            <span aria-current="page">Українська</span>
           </nav>
           <p class="copyright">© <span data-copyright-year></span> Oleh Saveniuk. Усі права захищено.</p>
         </div>

@@ -63,6 +63,9 @@
 }
 
 .case-hero {
+  display: grid;
+  gap: var(--space-xl);
+  align-items: start;
   padding-block: var(--space-3xl) var(--space-xl);
 }
 
@@ -118,6 +121,10 @@
   display: grid;
   gap: var(--space-sm);
   min-width: 0;
+}
+
+.case-figure.shot {
+  max-width: 54rem;
 }
 
 .case-figure img {
@@ -201,6 +208,10 @@
   margin-top: var(--space-2xl);
 }
 
+.section-head + .resource-list {
+  margin-top: 0;
+}
+
 .pub-list li,
 .resource-list li {
   display: grid;
@@ -218,4 +229,44 @@
 
 .case-back {
   margin-top: var(--space-2xl);
+}
+
+.case-study code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}
+
+.workflow + .case-figure,
+.status-split + .case-figure {
+  margin-top: var(--space-xl);
+}
+
+.arch-grid,
+.status-split {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.arch-grid article,
+.status-split article {
+  display: grid;
+  gap: 0.45rem;
+  min-width: 0;
+  align-content: start;
+  padding: var(--space-md);
+  border: var(--line) solid var(--color-line);
+  background: color-mix(in srgb, var(--color-bg-elevated) 70%, transparent);
+}
+
+.arch-grid h3,
+.status-split h3 {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.status-list {
+  display: grid;
+  gap: 0.4rem;
 }

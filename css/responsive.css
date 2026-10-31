@@ -109,6 +109,10 @@
   .case-meta {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .status-split {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 64em) {
@@ -125,6 +129,15 @@
 
   .case-lead .case-figure {
     margin-top: 0;
+  }
+
+  .case-hero:has(.case-figure) {
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    align-items: end;
+  }
+
+  .arch-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .video-list {

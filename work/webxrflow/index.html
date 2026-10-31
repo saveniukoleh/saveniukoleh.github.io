@@ -13,10 +13,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>WebXRFlow — Oleh Saveniuk</title>
-    <meta name="description" content="Case study placeholder for WebXRFlow by Oleh Saveniuk." />
+    <meta
+      name="description"
+      content="An early-stage browser CMS for WebXR scenes. Vue 3 and Firebase handle accounts and project records. The 3D editor and AR/VR sessions are not in this repository."
+    />
     <link rel="canonical" href="https://saveniukoleh.github.io/work/webxrflow/" />
     <link rel="alternate" hreflang="en" href="https://saveniukoleh.github.io/work/webxrflow/" />
     <link rel="alternate" hreflang="uk" href="https://saveniukoleh.github.io/uk/work/webxrflow/" />
+    <link rel="alternate" hreflang="x-default" href="https://saveniukoleh.github.io/work/webxrflow/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Oleh Saveniuk" />
+    <meta property="og:title" content="WebXRFlow — Oleh Saveniuk" />
+    <meta
+      property="og:description"
+      content="Vue 3 and Firebase for accounts and project records. The 3D editor and WebXR sessions are not in this repository."
+    />
+    <meta property="og:url" content="https://saveniukoleh.github.io/work/webxrflow/" />
+    <meta property="og:image" content="https://saveniukoleh.github.io/assets/images/webxrflow/home.jpg" />
+    <meta property="og:image:alt" content="Marketing home of WebXRFlow, titled WebXR CMS." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/assets/icons/favicon-32.png" type="image/png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" sizes="180x180" />
@@ -46,21 +63,243 @@
               <span aria-hidden="true">/</span>
               <a href="/uk/work/webxrflow/" lang="uk" hreflang="uk">UA</a>
             </nav>
-            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">Menu</button>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+              Menu
+            </button>
           </div>
         </div>
       </header>
       <main id="main">
-        <div class="wrap page-intro">
-          <p class="kicker">Case study</p>
-          <h1>WebXRFlow</h1>
-          <p class="stub-note">
-            This is a reserved case-study URL. Project narrative, screenshots, and
-            technical notes will be added from verified material. The graphic on
-            the homepage is a CSS placeholder, not a production screenshot.
-          </p>
-          <p><a class="card-link" href="/#work">Back to work</a></p>
-        </div>
+        <article class="case-study">
+          <header class="case-hero wrap">
+            <div class="case-intro">
+              <p class="kicker">Case study</p>
+              <h1>WebXRFlow</h1>
+              <p class="case-subtitle">
+                An early-stage browser CMS for WebXR scenes. Accounts and project records are in place. The 3D editor and immersive sessions are not in this repository.
+              </p>
+              <dl class="case-meta">
+                <div>
+                  <dt>Role</dt>
+                  <dd>Solo developer</dd>
+                </div>
+                <div>
+                  <dt>Period</dt>
+                  <dd>2025–2026</dd>
+                </div>
+                <div>
+                  <dt>Project type</dt>
+                  <dd>Portfolio SPA</dd>
+                </div>
+              </dl>
+              <ul class="tech-list" aria-label="Stack">
+                <li>Vue 3</li>
+                <li>TypeScript</li>
+                <li>Pinia</li>
+                <li>Firebase</li>
+                <li>GitHub Pages</li>
+              </ul>
+            </div>
+            <figure class="case-figure shot">
+              <img
+                src="/assets/images/webxrflow/home.jpg"
+                width="858"
+                height="560"
+                alt="Marketing home of the live WebXRFlow demo. The navigation reads WebXR CMS, Gallery, Sign In, and Get Started."
+              />
+              <figcaption>
+                Marketing home. The interface title is WebXR CMS. The headline is the product goal. Drag-and-drop editing is not implemented in this repository.
+              </figcaption>
+            </figure>
+          </header>
+
+          <section class="section" aria-labelledby="overview-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Overview</p>
+                <h2 id="overview-title">A project dashboard in front of a future editor.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  The plan is a signed-in place to create a project, edit a 3D scene, save it as JSON, and open it in the browser, in AR, or in VR. What runs is the account and project slice: email and Google sign-in, a dashboard that creates, lists, and deletes project documents, and routes reserved for the editor, gallery, and viewer.
+                </p>
+                <p>
+                  The product copy speaks to people making AR and VR scenes on the web. The planning notes frame the work as a one-developer MVP. The home page also says “Join thousands of creators.” The repository has no user count behind that line.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="role-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">My role</p>
+                <h2 id="role-title">Architecture, the Vue app, and Firebase.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  I set the application structure, built the screens, and connected Firebase Authentication and Firestore. Every commit on <code>main</code> is authored by me. The October 2026 commits publish the demo on GitHub Pages.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="build-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Core implementation</p>
+                <h2 id="build-title">Sign in, then a project document.</h2>
+              </div>
+              <ol class="workflow">
+                <li>
+                  <span>01</span>
+                  <p>Register or sign in with email and password, or with a Google popup. The first sign-in writes a profile at <code>users/{uid}</code>.</p>
+                </li>
+                <li>
+                  <span>02</span>
+                  <p>The dashboard lists that person’s projects, creates one from a dialog, and deletes it after confirmation.</p>
+                </li>
+                <li>
+                  <span>03</span>
+                  <p>A new document stores a title, a description, <code>isPublished: false</code>, and <code>sceneData</code> with version <code>1.0</code> and an empty <code>objects</code> array.</p>
+                </li>
+                <li>
+                  <span>04</span>
+                  <p>Editor, gallery, and viewer routes open from there. They do not load the document, and they do not render a scene.</p>
+                </li>
+              </ol>
+              <figure class="case-figure shot">
+                <img
+                  src="/assets/images/webxrflow/login.jpg"
+                  width="858"
+                  height="720"
+                  alt="Sign-in screen with email and password fields, a Sign in button, and Continue with Google."
+                />
+                <figcaption>Sign-in. Email and password, and the Google popup, call Firebase Authentication.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="architecture-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Architecture</p>
+                <h2 id="architecture-title">Vue and Pinia in front of Firebase.</h2>
+              </div>
+              <figure class="case-figure">
+                <div class="arch-grid">
+                  <article>
+                    <h3>Vue app</h3>
+                    <p>Router, Pinia, and the screens. Route guards read the auth store. They do not call Firebase themselves.</p>
+                  </article>
+                  <article>
+                    <h3>Auth store</h3>
+                    <p>Pinia talks to Firebase Authentication and writes the <code>users/{uid}</code> profile in Firestore.</p>
+                  </article>
+                  <article>
+                    <h3>Projects store</h3>
+                    <p>Pinia talks to the <code>projects</code> collection. The dashboard is the screen that uses it.</p>
+                  </article>
+                </div>
+                <figcaption>
+                  Editor, gallery, and viewer keep local state. Storage upload helpers are in the repo and no screen calls them. There is no application server.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="challenges-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Development challenges</p>
+                <h2 id="challenges-title">Subpath deploy, the project query, and the auth guard.</h2>
+              </div>
+              <ol class="workflow">
+                <li>
+                  <span>01</span>
+                  <p>The demo lives at <code>/webxrflow/</code> on an existing site, while local dev stays at <code>/</code>. The Vite base is <code>/webxrflow/</code> only when <code>GITHUB_PAGES</code> is set, and the router uses that base. GitHub Pages does not rewrite unknown paths, so the workflow copies <code>index.html</code> to <code>404.html</code>. Deep links return HTTP 404 with the app shell, and Vue can still start.</p>
+                </li>
+                <li>
+                  <span>02</span>
+                  <p>A user’s project list filters on <code>userId</code> and sorts by <code>updatedAt</code> in the browser. That avoids a composite Firestore index. The published-projects query still uses <code>orderBy</code>, and no screen calls it.</p>
+                </li>
+                <li>
+                  <span>03</span>
+                  <p>Firebase restores the user asynchronously. The route guard treats an empty user as signed out and does not wait, so a refresh of the dashboard can land on login. That gap is still open.</p>
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="status-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Project status</p>
+                <h2 id="status-title">Working records, prototype screens.</h2>
+              </div>
+              <div class="status-split">
+                <article>
+                  <h3>In this repository</h3>
+                  <ul class="status-list">
+                    <li>Email and password registration, Google sign-in, and sign-out.</li>
+                    <li>Create, list, and delete project documents.</li>
+                    <li>An empty scene JSON field on each new project.</li>
+                    <li>Client routes and a GitHub Pages deploy.</li>
+                    <li>A WebXR support check on the viewer.</li>
+                  </ul>
+                </article>
+                <article>
+                  <h3>Left for a later phase</h3>
+                  <ul class="status-list">
+                    <li>A 3D renderer, scene editor, and object transforms.</li>
+                    <li>AR sessions and VR sessions.</li>
+                    <li>Publishing, and a gallery filled from Firestore.</li>
+                    <li>Asset upload from the interface.</li>
+                  </ul>
+                </article>
+              </div>
+              <figure class="case-figure shot">
+                <img
+                  src="/assets/images/webxrflow/viewer.jpg"
+                  width="858"
+                  height="800"
+                  alt="Viewer shell on a dark screen. A status pill reads WebXR Not Supported. The page says the immersive scene will appear when implemented."
+                />
+                <figcaption>
+                  Viewer shell in a desktop browser. The pill is the result of <code>isSessionSupported</code> for immersive AR and VR. Start AR and Start VR are disabled and do not open a session. “Amazing AR Experience” is placeholder copy, not a saved project.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="links-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Links</p>
+                <h2 id="links-title">Demo and source.</h2>
+              </div>
+              <ul class="resource-list">
+                <li>
+                  <p class="kicker">Live demo</p>
+                  <p class="pub-title">
+                    <a href="https://saveniukoleh.com/webxrflow/" target="_blank" rel="noopener noreferrer">saveniukoleh.com/webxrflow</a>
+                  </p>
+                  <p class="muted">Marketing page, sign-in, and the viewer shell from this repository.</p>
+                </li>
+                <li>
+                  <p class="kicker">Repository</p>
+                  <p class="pub-title">
+                    <a href="https://github.com/saveniukoleh/webxrflow" target="_blank" rel="noopener noreferrer">github.com/saveniukoleh/webxrflow</a>
+                  </p>
+                  <p class="muted">Vue 3 app, Firebase client modules, and the GitHub Pages workflow.</p>
+                </li>
+              </ul>
+              <p class="case-back">
+                <a class="card-link" href="/#work">Back to work</a>
+              </p>
+            </div>
+          </section>
+        </article>
       </main>
       <footer class="site-footer">
         <div class="wrap footer-grid">
@@ -70,6 +309,10 @@
               <li><a href="/about/">About</a></li>
               <li><a href="/#contact">Contact</a></li>
             </ul>
+          </nav>
+          <nav class="footer-langs" aria-label="Language">
+            <span aria-current="page">English</span>
+            <a href="/uk/work/webxrflow/" lang="uk" hreflang="uk">Українська</a>
           </nav>
           <p class="copyright">© <span data-copyright-year></span> Oleh Saveniuk. All rights reserved.</p>
         </div>
