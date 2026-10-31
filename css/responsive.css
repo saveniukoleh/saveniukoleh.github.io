@@ -104,3 +104,31 @@
     letter-spacing: 0.1em;
   }
 }
+
+@media (min-width: 48em) {
+  .case-meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64em) {
+  .case-meta {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .case-lead {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: var(--space-xl);
+    align-items: center;
+  }
+
+  .case-lead .case-figure {
+    margin-top: 0;
+  }
+
+  .video-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+  }
+}

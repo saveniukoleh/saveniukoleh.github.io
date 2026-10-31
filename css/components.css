@@ -159,6 +159,15 @@
     #16181c;
 }
 
+.project-visual img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+
 .placeholder-flag {
   position: absolute;
   top: 0.6rem;

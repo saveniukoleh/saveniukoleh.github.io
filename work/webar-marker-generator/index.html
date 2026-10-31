@@ -13,10 +13,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>WebAR Marker Generator — Oleh Saveniuk</title>
-    <meta name="description" content="Case study placeholder for WebAR Marker Generator by Oleh Saveniuk." />
+    <meta
+      name="description"
+      content="A browser tool for marker-based augmented reality. Bind printed markers to images, audio, video, and 3D models. Graduation project, Odesa Polytechnic, 2021–2022."
+    />
     <link rel="canonical" href="https://saveniukoleh.github.io/work/webar-marker-generator/" />
     <link rel="alternate" hreflang="en" href="https://saveniukoleh.github.io/work/webar-marker-generator/" />
     <link rel="alternate" hreflang="uk" href="https://saveniukoleh.github.io/uk/work/webar-marker-generator/" />
+    <link rel="alternate" hreflang="x-default" href="https://saveniukoleh.github.io/work/webar-marker-generator/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Oleh Saveniuk" />
+    <meta property="og:title" content="WebAR Marker Generator — Oleh Saveniuk" />
+    <meta
+      property="og:description"
+      content="A browser tool for marker-based augmented reality. Printed markers open images, audio, video, and 3D models."
+    />
+    <meta property="og:url" content="https://saveniukoleh.github.io/work/webar-marker-generator/" />
+    <meta property="og:image" content="https://saveniukoleh.github.io/assets/images/webar-marker-generator/prototype.jpg" />
+    <meta property="og:image:alt" content="Printed prototype sheet with a pattern marker, a QR code, and a 3D model tracked on the page." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/assets/icons/favicon-32.png" type="image/png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" sizes="180x180" />
@@ -46,21 +63,223 @@
               <span aria-hidden="true">/</span>
               <a href="/uk/work/webar-marker-generator/" lang="uk" hreflang="uk">UA</a>
             </nav>
-            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">Menu</button>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+              Menu
+            </button>
           </div>
         </div>
       </header>
       <main id="main">
-        <div class="wrap page-intro">
-          <p class="kicker">Case study</p>
-          <h1>WebAR Marker Generator</h1>
-          <p class="stub-note">
-            This is a reserved case-study URL. Project narrative, screenshots, and
-            technical notes will be added from verified material. The graphic on
-            the homepage is a CSS placeholder, not a production screenshot.
-          </p>
-          <p><a class="card-link" href="/#work">Back to work</a></p>
-        </div>
+        <article class="case-study">
+          <header class="case-hero wrap">
+            <div class="case-intro">
+              <p class="kicker">Case study</p>
+              <h1>WebAR Marker Generator</h1>
+              <p class="case-subtitle">
+                A browser-based tool for creating marker-based augmented reality experiences.
+              </p>
+              <dl class="case-meta">
+                <div>
+                  <dt>Period</dt>
+                  <dd>2021–2022</dd>
+                </div>
+                <div>
+                  <dt>Institution</dt>
+                  <dd>Odesa Polytechnic</dd>
+                </div>
+                <div>
+                  <dt>Project type</dt>
+                  <dd>Graduation project / Educational technology</dd>
+                </div>
+              </dl>
+              <ul class="tech-list" aria-label="Topics">
+                <li>WebAR</li>
+                <li>JavaScript</li>
+                <li>Marker Tracking</li>
+                <li>3D</li>
+                <li>Educational Technology</li>
+              </ul>
+            </div>
+          </header>
+
+          <section class="section" aria-labelledby="overview-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Overview</p>
+                <h2 id="overview-title">Marker-based AR, opened in the browser.</h2>
+              </div>
+              <div class="case-lead">
+                <div class="case-copy">
+                  <p>
+                    WebAR Marker Generator pairs a printed marker with an image, audio, video, or 3D model. A physical object then opens as an augmented reality experience in a smartphone browser.
+                  </p>
+                </div>
+                <figure class="case-figure">
+                  <img
+                    src="/assets/images/webar-marker-generator/prototype.jpg"
+                    width="1280"
+                    height="720"
+                    alt="Desk prototype: a square pattern marker, a QR code, and a 3D butterfly tracked on the printed sheet beside a character image."
+                  />
+                  <figcaption>Prototype. Pattern marker, QR code, and a tracked 3D model.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="role-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">My role</p>
+                <h2 id="role-title">Graduation project.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  I developed the generator, coordinated the project work, and presented and defended the result.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="workflow-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">How it works</p>
+                <h2 id="workflow-title">From a QR code to the tracked result.</h2>
+              </div>
+              <ol class="workflow">
+                <li>
+                  <span>01</span>
+                  <p>Launch the experience from a QR code.</p>
+                </li>
+                <li>
+                  <span>02</span>
+                  <p>Recognize barcode and pattern markers.</p>
+                </li>
+                <li>
+                  <span>03</span>
+                  <p>Associate each marker with an image, audio, video, or 3D model.</p>
+                </li>
+                <li>
+                  <span>04</span>
+                  <p>View the result as a browser-based AR experience.</p>
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="impact-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Educational application</p>
+                <h2 id="impact-title">Student teams built the game pieces.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Seven teams of three students used the generator to create AR elements for educational tabletop games on operating systems: Unix process management, file systems, data locking, kernel-level operations, and process scheduling.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="videos-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Demonstrations</p>
+                <h2 id="videos-title">Prototype, walkthrough, and student work.</h2>
+              </div>
+              <div class="video-list">
+                <figure class="case-video">
+                  <div class="video-frame">
+                    <iframe
+                      src="https://www.youtube-nocookie.com/embed/cYpAcT42Lhc"
+                      title="First prototype of the WebAR Marker Generator"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"
+                    ></iframe>
+                  </div>
+                  <figcaption>
+                    <a href="https://www.youtube.com/watch?v=cYpAcT42Lhc" target="_blank" rel="noopener noreferrer">First prototype</a>
+                  </figcaption>
+                </figure>
+                <figure class="case-video">
+                  <div class="video-frame">
+                    <iframe
+                      src="https://www.youtube-nocookie.com/embed/HSMLO3TveRw"
+                      title="Lecture demonstrating how to use the WebAR Marker Generator"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"
+                    ></iframe>
+                  </div>
+                  <figcaption>
+                    <a href="https://www.youtube.com/watch?v=HSMLO3TveRw" target="_blank" rel="noopener noreferrer">Generator walkthrough</a>
+                  </figcaption>
+                </figure>
+                <figure class="case-video">
+                  <div class="video-frame">
+                    <iframe
+                      src="https://www.youtube-nocookie.com/embed/EssxpJPtf1Y"
+                      title="Students presenting augmented reality projects created with the WebAR Marker Generator"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"
+                    ></iframe>
+                  </div>
+                  <figcaption>
+                    <a href="https://www.youtube.com/watch?v=EssxpJPtf1Y" target="_blank" rel="noopener noreferrer">Student projects</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="papers-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Research and resources</p>
+                <h2 id="papers-title">Papers and links.</h2>
+              </div>
+              <ol class="pub-list">
+                <li>
+                  <p class="kicker">2021 · Saveniuk, O. &amp; Blazhko, O.</p>
+                  <p class="pub-title" lang="uk">
+                    <a href="http://dspace.opu.ua/jspui/handle/123456789/11793" target="_blank" rel="noopener noreferrer">Особливості створення конструктора мультимаркерних застосунків доповненої реальності для веб-середовища</a>
+                  </p>
+                </li>
+                <li>
+                  <p class="kicker">2022 · Saveniuk, O. &amp; Blazhko, O.</p>
+                  <p class="pub-title" lang="uk">
+                    <a href="https://ontu.edu.ua/download/konfi/2022/Conference_abstract-IT-21-22-04-22.pdf" target="_blank" rel="noopener noreferrer">Особливості використання технології доповненої реальності для розробки настільних навчальних ігор</a>
+                  </p>
+                </li>
+              </ol>
+              <ul class="resource-list">
+                <li>
+                  <p class="kicker">Project URL</p>
+                  <p class="pub-title">
+                    <a href="https://ar.gamehub.od.ua/" target="_blank" rel="noopener noreferrer">Original WebAR Marker Generator</a>
+                  </p>
+                  <p class="muted">Original URL of my graduation project. Current availability is not guaranteed.</p>
+                </li>
+                <li>
+                  <p class="kicker">External reference</p>
+                  <p class="pub-title">
+                    <a href="https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html" target="_blank" rel="noopener noreferrer">AR.js Marker Generator</a>
+                  </p>
+                  <p class="muted">External AR.js marker-generation reference tool. Separate from this project.</p>
+                </li>
+              </ul>
+              <p class="case-back">
+                <a class="card-link" href="/#work">Back to work</a>
+              </p>
+            </div>
+          </section>
+        </article>
       </main>
       <footer class="site-footer">
         <div class="wrap footer-grid">
@@ -70,6 +289,10 @@
               <li><a href="/about/">About</a></li>
               <li><a href="/#contact">Contact</a></li>
             </ul>
+          </nav>
+          <nav class="footer-langs" aria-label="Language">
+            <span aria-current="page">English</span>
+            <a href="/uk/work/webar-marker-generator/" lang="uk" hreflang="uk">Українська</a>
           </nav>
           <p class="copyright">© <span data-copyright-year></span> Oleh Saveniuk. All rights reserved.</p>
         </div>

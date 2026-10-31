@@ -13,10 +13,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>WebAR Marker Generator — Олег Савенюк</title>
-    <meta name="description" content="Заглушка кейсу WebAR Marker Generator Олега Савенюка." />
+    <meta
+      name="description"
+      content="Браузерний інструмент маркерної доповненої реальності. Друковані маркери відкривають зображення, аудіо, відео та 3D-моделі. Дипломний проєкт, Одеська політехніка, 2021–2022."
+    />
     <link rel="canonical" href="https://saveniukoleh.github.io/uk/work/webar-marker-generator/" />
     <link rel="alternate" hreflang="en" href="https://saveniukoleh.github.io/work/webar-marker-generator/" />
     <link rel="alternate" hreflang="uk" href="https://saveniukoleh.github.io/uk/work/webar-marker-generator/" />
+    <link rel="alternate" hreflang="x-default" href="https://saveniukoleh.github.io/work/webar-marker-generator/" />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Oleh Saveniuk" />
+    <meta property="og:title" content="WebAR Marker Generator — Олег Савенюк" />
+    <meta
+      property="og:description"
+      content="Браузерний інструмент маркерної доповненої реальності. Друковані маркери відкривають зображення, аудіо, відео та 3D-моделі."
+    />
+    <meta property="og:url" content="https://saveniukoleh.github.io/uk/work/webar-marker-generator/" />
+    <meta property="og:image" content="https://saveniukoleh.github.io/assets/images/webar-marker-generator/prototype.jpg" />
+    <meta property="og:image:alt" content="Друкований прототип: шаблонний маркер, QR-код і 3D-модель, що тримається на аркуші." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/assets/icons/favicon-32.png" type="image/png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" sizes="180x180" />
@@ -46,21 +63,223 @@
               <span aria-hidden="true">/</span>
               <span aria-current="page">UA</span>
             </nav>
-            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">Меню</button>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+              Меню
+            </button>
           </div>
         </div>
       </header>
       <main id="main">
-        <div class="wrap page-intro">
-          <p class="kicker">Кейс</p>
-          <h1>WebAR Marker Generator</h1>
-          <p class="stub-note">
-            Це зарезервована адреса кейсу. Опис, знімки екрана та технічні нотатки
-            з’являться з перевірених матеріалів. Графіка на головній — CSS-заглушка,
-            а не продакшен-скріншот.
-          </p>
-          <p><a class="card-link" href="/uk/#work">До робіт</a></p>
-        </div>
+        <article class="case-study">
+          <header class="case-hero wrap">
+            <div class="case-intro">
+              <p class="kicker">Кейс</p>
+              <h1>WebAR Marker Generator</h1>
+              <p class="case-subtitle">
+                Браузерний інструмент для створення маркерної доповненої реальності.
+              </p>
+              <dl class="case-meta">
+                <div>
+                  <dt>Період</dt>
+                  <dd>2021–2022</dd>
+                </div>
+                <div>
+                  <dt>Заклад</dt>
+                  <dd>Одеська політехніка</dd>
+                </div>
+                <div>
+                  <dt>Тип проєкту</dt>
+                  <dd>Дипломний проєкт / освітня технологія</dd>
+                </div>
+              </dl>
+              <ul class="tech-list" aria-label="Теми">
+                <li>WebAR</li>
+                <li>JavaScript</li>
+                <li>Трекінг маркерів</li>
+                <li>3D</li>
+                <li>Освітні технології</li>
+              </ul>
+            </div>
+          </header>
+
+          <section class="section" aria-labelledby="overview-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Огляд</p>
+                <h2 id="overview-title">Маркерна доповнена реальність у браузері.</h2>
+              </div>
+              <div class="case-lead">
+                <div class="case-copy">
+                  <p>
+                    WebAR Marker Generator пов’язує друкований маркер із зображенням, аудіо, відео або 3D-моделлю. Фізичний об’єкт тоді відкривається як досвід доповненої реальності в браузері смартфона.
+                  </p>
+                </div>
+                <figure class="case-figure">
+                  <img
+                    src="/assets/images/webar-marker-generator/prototype.jpg"
+                    width="1280"
+                    height="720"
+                    alt="Прототип на столі: квадратний шаблонний маркер, QR-код і 3D-метелик, який тримається на аркуші поруч із зображенням персонажа."
+                  />
+                  <figcaption>Прототип. Шаблонний маркер, QR-код і 3D-модель.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="role-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Моя роль</p>
+                <h2 id="role-title">Дипломний проєкт.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Я розробив генератор, координував роботу над ним, а потім представив і захистив результат.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="workflow-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Як це працює</p>
+                <h2 id="workflow-title">Від QR-коду до результату на екрані.</h2>
+              </div>
+              <ol class="workflow">
+                <li>
+                  <span>01</span>
+                  <p>Запуск досвіду за QR-кодом.</p>
+                </li>
+                <li>
+                  <span>02</span>
+                  <p>Розпізнавання штрихкодових і шаблонних маркерів.</p>
+                </li>
+                <li>
+                  <span>03</span>
+                  <p>Прив’язка до маркера зображення, аудіо, відео або 3D-моделі.</p>
+                </li>
+                <li>
+                  <span>04</span>
+                  <p>Перегляд результату як браузерного AR-досвіду.</p>
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="impact-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Навчальне застосування</p>
+                <h2 id="impact-title">Студентські команди зібрали ігрові елементи.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Сім команд по три студенти використали генератор, щоб створити AR-елементи для навчальних настільних ігор з операційних систем: керування процесами Unix, файлова система, блокування даних, операції рівня ядра та планування процесів.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="videos-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Демонстрації</p>
+                <h2 id="videos-title">Прототип, огляд і студентські роботи.</h2>
+              </div>
+              <div class="video-list">
+                <figure class="case-video">
+                  <div class="video-frame">
+                    <iframe
+                      src="https://www.youtube-nocookie.com/embed/cYpAcT42Lhc"
+                      title="Перший прототип WebAR Marker Generator"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"
+                    ></iframe>
+                  </div>
+                  <figcaption>
+                    <a href="https://www.youtube.com/watch?v=cYpAcT42Lhc" target="_blank" rel="noopener noreferrer">Перший прототип</a>
+                  </figcaption>
+                </figure>
+                <figure class="case-video">
+                  <div class="video-frame">
+                    <iframe
+                      src="https://www.youtube-nocookie.com/embed/HSMLO3TveRw"
+                      title="Лекція з демонстрацією того, як користуватися WebAR Marker Generator"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"
+                    ></iframe>
+                  </div>
+                  <figcaption>
+                    <a href="https://www.youtube.com/watch?v=HSMLO3TveRw" target="_blank" rel="noopener noreferrer">Огляд генератора</a>
+                  </figcaption>
+                </figure>
+                <figure class="case-video">
+                  <div class="video-frame">
+                    <iframe
+                      src="https://www.youtube-nocookie.com/embed/EssxpJPtf1Y"
+                      title="Студенти презентують проєкти доповненої реальності, створені в WebAR Marker Generator"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"
+                    ></iframe>
+                  </div>
+                  <figcaption>
+                    <a href="https://www.youtube.com/watch?v=EssxpJPtf1Y" target="_blank" rel="noopener noreferrer">Студентські проєкти</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="papers-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Дослідження і матеріали</p>
+                <h2 id="papers-title">Статті та посилання.</h2>
+              </div>
+              <ol class="pub-list">
+                <li>
+                  <p class="kicker">2021 · Савенюк О., Блажко О.</p>
+                  <p class="pub-title">
+                    <a href="http://dspace.opu.ua/jspui/handle/123456789/11793" target="_blank" rel="noopener noreferrer">Особливості створення конструктора мультимаркерних застосунків доповненої реальності для веб-середовища</a>
+                  </p>
+                </li>
+                <li>
+                  <p class="kicker">2022 · Савенюк О., Блажко О.</p>
+                  <p class="pub-title">
+                    <a href="https://ontu.edu.ua/download/konfi/2022/Conference_abstract-IT-21-22-04-22.pdf" target="_blank" rel="noopener noreferrer">Особливості використання технології доповненої реальності для розробки настільних навчальних ігор</a>
+                  </p>
+                </li>
+              </ol>
+              <ul class="resource-list">
+                <li>
+                  <p class="kicker">Адреса проєкту</p>
+                  <p class="pub-title">
+                    <a href="https://ar.gamehub.od.ua/" target="_blank" rel="noopener noreferrer">Оригінальний WebAR Marker Generator</a>
+                  </p>
+                  <p class="muted">Початкова адреса мого дипломного проєкту. Доступність зараз не гарантована.</p>
+                </li>
+                <li>
+                  <p class="kicker">Зовнішній інструмент</p>
+                  <p class="pub-title">
+                    <a href="https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html" target="_blank" rel="noopener noreferrer">Генератор маркерів AR.js</a>
+                  </p>
+                  <p class="muted">Зовнішній довідковий інструмент AR.js для створення маркерів. Окремо від цього проєкту.</p>
+                </li>
+              </ul>
+              <p class="case-back">
+                <a class="card-link" href="/uk/#work">До робіт</a>
+              </p>
+            </div>
+          </section>
+        </article>
       </main>
       <footer class="site-footer">
         <div class="wrap footer-grid">
@@ -70,6 +289,10 @@
               <li><a href="/uk/about/">Про мене</a></li>
               <li><a href="/uk/#contact">Контакт</a></li>
             </ul>
+          </nav>
+          <nav class="footer-langs" aria-label="Мова">
+            <a href="/work/webar-marker-generator/" lang="en" hreflang="en">English</a>
+            <span aria-current="page">Українська</span>
           </nav>
           <p class="copyright">© <span data-copyright-year></span> Oleh Saveniuk. Усі права захищено.</p>
         </div>
