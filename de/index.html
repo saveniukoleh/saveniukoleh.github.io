@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MW5MDWE7L6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MW5MDWE7L6');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Oleh Saveniuk — Senior Frontend / WebGL Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio von Oleh Saveniuk, Senior Frontend / WebGL Engineer. Interaktives 3D, WebGL, WebAR/WebVR und moderne Webanwendungen."
+    />
+    <link rel="canonical" href="https://saveniukoleh.github.io/de/" />
+    <link rel="alternate" hreflang="en" href="https://saveniukoleh.github.io/" />
+    <link rel="alternate" hreflang="uk" href="https://saveniukoleh.github.io/uk/" />
+    <link rel="alternate" hreflang="de" href="https://saveniukoleh.github.io/de/" />
+    <link rel="alternate" hreflang="x-default" href="https://saveniukoleh.github.io/" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Oleh Saveniuk" />
+    <meta property="og:title" content="Oleh Saveniuk — Senior Frontend / WebGL Engineer" />
+    <meta
+      property="og:description"
+      content="Frontend-Engineering, Echtzeit-3D-Grafik und WebAR/WebVR."
+    />
+    <meta property="og:url" content="https://saveniukoleh.github.io/de/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/assets/icons/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" sizes="180x180" />
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <div class="site">
+      <header class="site-header">
+        <div class="wrap header-inner">
+          <a class="logo" href="/de/">OLEH SAVENIUK</a>
+          <nav id="site-nav" class="site-nav" data-nav aria-label="Hauptnavigation">
+            <ul class="nav-list">
+              <li><a href="#work">Arbeit</a></li>
+              <li><a href="/de/about/">Über mich</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+          </nav>
+          <div class="header-tools">
+            <nav class="lang-switch" aria-label="Sprache">
+              <a href="/" lang="en" hreflang="en">EN</a>
+              <span aria-hidden="true">/</span>
+              <a href="/uk/" lang="uk" hreflang="uk">UA</a>
+              <span aria-hidden="true">/</span>
+              <span aria-current="page">DE</span>
+            </nav>
+            <button
+              class="nav-toggle"
+              type="button"
+              data-nav-toggle
+              aria-controls="site-nav"
+              aria-expanded="false"
+            >
+              Menü
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="hero wrap" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="kicker">Senior Frontend / WebGL Engineer</p>
+            <h1 id="hero-title" class="hero-title">
+              <span>Oleh</span>
+              <span class="last">Saveniuk</span>
+            </h1>
+            <p class="hero-role">Interaktives 3D, WebGL und räumliche Web-Oberflächen.</p>
+            <p class="hero-lede">
+              Ich entwickle moderne Webanwendungen mit Schwerpunkt auf Frontend-Engineering,
+              Echtzeit-3D-Grafik und WebAR/WebVR.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#work">Projekte ansehen</a>
+              <a class="btn btn-ghost" href="/assets/documents/Oleh-Saveniuk-CV.pdf" download>CV herunterladen</a>
+              <a class="btn btn-ghost" href="#contact">Kontakt</a>
+            </div>
+          </div>
+          <div class="hero-canvas-frame">
+            <div class="hero-fallback" aria-hidden="true"></div>
+            <canvas
+              data-hero-canvas
+              tabindex="0"
+              aria-label="Ziehen, um das Möbiusband zu drehen. Pfeiltasten funktionieren, wenn dieser Bereich fokussiert ist."
+            ></canvas>
+            <p class="hero-canvas-caption">Möbius · ziehen</p>
+          </div>
+        </section>
+
+        <section id="work" class="section" aria-labelledby="work-title">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="kicker">Ausgewählte Projekte</p>
+              <h2 id="work-title">Ausgewählte Arbeiten in Frontend-Entwicklung, KI-Integration, WebXR und WebAR.</h2>
+            </div>
+            <div class="project-grid">
+              <article class="project-card">
+                <div class="project-visual">
+                  <img
+                    src="/assets/images/resilient-mind/home.jpg"
+                    width="858"
+                    height="573"
+                    alt="Startseite von Resilient Mind. Vier Karten stellen Chat, Therapiebuchung, Erholungsprogramme und Community vor."
+                  />
+                </div>
+                <h3>Resilient Mind</h3>
+                <p class="muted">
+                  Ein Prototyp für psychische Unterstützung. Konten laufen über Vue 3 und Firebase.
+                  Ein KI-Chatbot ruft OpenAI über eine Cloud Function auf; Selbstübungen laufen im Browser.
+                </p>
+                <ul class="tech-list">
+                  <li>Vue 3</li>
+                  <li>Firebase</li>
+                  <li>OpenAI</li>
+                </ul>
+                <a class="card-link" href="/de/work/resilient-mind/">Fallstudie öffnen</a>
+              </article>
+              <article class="project-card">
+                <div class="project-visual">
+                  <img
+                    src="/assets/images/webxrflow/home.jpg"
+                    width="858"
+                    height="560"
+                    alt="Marketing-Startseite von WebXRFlow. Die Überschrift lautet Create Immersive WebXR Experiences."
+                  />
+                </div>
+                <h3>WebXRFlow</h3>
+                <p class="muted">
+                  Eine frühe Browser-CMS. Vue 3 und Firebase verwalten Konten und Projektdaten.
+                  Der 3D-Editor und WebXR-Sitzungen sind in diesem Repository nicht enthalten.
+                </p>
+                <ul class="tech-list">
+                  <li>Vue 3</li>
+                  <li>TypeScript</li>
+                  <li>Firebase</li>
+                </ul>
+                <a class="card-link" href="/de/work/webxrflow/">Fallstudie öffnen</a>
+              </article>
+              <article class="project-card">
+                <div class="project-visual">
+                  <img
+                    src="/assets/images/webar-marker-generator/prototype.jpg"
+                    width="1280"
+                    height="720"
+                    alt="Gedruckter Prototyp mit Mustermarker, QR-Code und verfolgtem 3D-Modell."
+                  />
+                </div>
+                <h3>WebAR Marker Generator</h3>
+                <p class="muted">
+                  Ein Browser-Tool, das gedruckte Marker mit Bildern, Audio, Video und 3D-Modellen
+                  verknüpft und das Ergebnis im Smartphone-Browser öffnet.
+                </p>
+                <ul class="tech-list">
+                  <li>WebAR</li>
+                  <li>JavaScript</li>
+                  <li>3D</li>
+                </ul>
+                <a class="card-link" href="/de/work/webar-marker-generator/">Fallstudie öffnen</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="experience-title">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="kicker">Erfahrung</p>
+              <h2 id="experience-title">Sechs Jahre zwischen Retail, WebAR und immersivem Web.</h2>
+            </div>
+            <div class="experience-preview">
+              <p>
+                Senior Frontend / WebGL Engineer mit Erfahrung in Enterprise-Retail-Software,
+                WebAR-Plattformen, interaktiver Werbung, Lern-VR und KI-gestützten Webanwendungen.
+              </p>
+              <ul class="experience-list" aria-label="Ausgewählte Positionen">
+                <li>
+                  <p class="experience-role">Full Stack Developer · The Commons Project</p>
+                  <p class="muted">2025–2026</p>
+                </li>
+                <li>
+                  <p class="experience-role">Software Developer · GK Software SE</p>
+                  <p class="muted">2022–2024</p>
+                </li>
+                <li>
+                  <p class="experience-role">Frontend Developer · Geenee AR</p>
+                  <p class="muted">2021–2022</p>
+                </li>
+                <li>
+                  <p class="experience-role">WebAR Developer · 360 Stories</p>
+                  <p class="muted">2020–2021</p>
+                </li>
+                <li>
+                  <p class="experience-role">WebVR Developer · Very Big Things</p>
+                  <p class="muted">2019–2020</p>
+                </li>
+              </ul>
+              <a class="card-link" href="/de/about/">Mehr auf der Seite „Über mich“</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section" aria-labelledby="contact-title">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="kicker">Kontakt</p>
+              <h2 id="contact-title">So erreichen Sie mich.</h2>
+            </div>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-key">Email</span>
+                <a href="mailto:oleh.saveniuk@gmail.com">oleh.saveniuk@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-key">GitHub</span>
+                <a href="https://github.com/saveniukoleh" rel="noopener noreferrer">github.com/saveniukoleh</a>
+              </li>
+              <li>
+                <span class="contact-key">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/saveniukoleh/" rel="noopener noreferrer">linkedin.com/in/saveniukoleh</a>
+              </li>
+              <li>
+                <span class="contact-key">CV</span>
+                <a href="/assets/documents/Oleh-Saveniuk-CV.pdf" download>Oleh-Saveniuk-CV.pdf</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="wrap footer-grid">
+          <nav aria-label="Fußzeile">
+            <ul class="footer-nav">
+              <li><a href="#work">Arbeit</a></li>
+              <li><a href="/de/about/">Über mich</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-langs" aria-label="Sprache">
+            <a href="/" lang="en" hreflang="en">English</a>
+            <a href="/uk/" lang="uk" hreflang="uk">Українська</a>
+            <span aria-current="page">Deutsch</span>
+          </nav>
+          <p class="copyright">© <span data-copyright-year></span> Oleh Saveniuk. Alle Rechte vorbehalten.</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
