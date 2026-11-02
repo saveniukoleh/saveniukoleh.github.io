@@ -120,6 +120,71 @@
   line-height: 1.15;
 }
 
+.project-visual--video {
+  aspect-ratio: 16 / 9;
+  padding: 0;
+  background: #0c0d10;
+}
+
+.project-visual--video .video-frame {
+  aspect-ratio: 16 / 9;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.project-visual--pending {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  padding: var(--space-md);
+  text-align: center;
+}
+
+.video-lazy-play {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background: #0c0d10;
+}
+
+.video-lazy-play img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-lazy-play::after {
+  content: "";
+  position: relative;
+  z-index: 1;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--color-bg) 35%, transparent);
+  box-shadow: inset 0 0 0 2px var(--color-line);
+  clip-path: polygon(38% 28%, 38% 72%, 72% 50%);
+  background-color: var(--color-accent);
+}
+
+.work-group-label {
+  grid-column: 1 / -1;
+  margin-top: var(--space-md);
+}
+
+.work-group-label:first-child {
+  margin-top: 0;
+}
+
 .project-visual {
   position: relative;
   aspect-ratio: 16 / 10;
@@ -182,19 +247,50 @@
   color: var(--color-text-muted);
 }
 
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.65rem;
+  row-gap: 0.15rem;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
+
+.project-meta span + span::before {
+  content: "·";
+  margin-right: 0.65rem;
+  color: color-mix(in srgb, var(--color-text-muted) 65%, transparent);
+}
+
 .tech-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  align-items: center;
+  gap: 0.35rem 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .tech-list li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 1.5rem;
+  padding: 0.125rem 0.5rem;
   font-family: var(--font-mono);
   font-size: var(--text-xs);
-  letter-spacing: 0.08em;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
   color: var(--color-accent-2);
   border: var(--line) solid color-mix(in srgb, var(--color-accent-2) 35%, transparent);
-  padding: 0.25rem 0.45rem;
+  border-radius: 2px;
+  white-space: nowrap;
 }
 
 .card-link {

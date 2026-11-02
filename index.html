@@ -61,9 +61,9 @@
                         <nav class="lang-switch" aria-label="Language">
               <span aria-current="page">EN</span>
               <span aria-hidden="true">/</span>
-              <a href="/uk/" lang="uk" hreflang="uk">UA</a>
-              <span aria-hidden="true">/</span>
               <a href="/de/" lang="de" hreflang="de">DE</a>
+              <span aria-hidden="true">/</span>
+              <a href="/uk/" lang="uk" hreflang="uk">UA</a>
             </nav>
             <button
               class="nav-toggle"
@@ -93,7 +93,7 @@
             </p>
             <div class="cta-row">
               <a class="btn btn-primary" href="#work">Explore Projects</a>
-              <a class="btn btn-ghost" href="/assets/documents/Oleh-Saveniuk-CV.pdf" download>Download CV</a>
+              <a class="btn btn-ghost" href="/assets/documents/Oleh_Saveniuk_CV.pdf" download="Oleh_Saveniuk_CV.pdf">Download CV</a>
               <a class="btn btn-ghost" href="#contact">Contact</a>
             </div>
           </div>
@@ -111,32 +111,109 @@
         <section id="work" class="section" aria-labelledby="work-title">
           <div class="wrap">
             <div class="section-head">
-              <p class="kicker">Selected projects</p>
-              <h2 id="work-title">Selected work across frontend engineering, AI integration, WebXR, and WebAR.</h2>
+              <p class="kicker">Professional Work</p>
+              <h2 id="work-title">Selected examples of my professional development work.</h2>
             </div>
+            <!-- UCLA project preserved in /assets/projects/preserved/ucla-ar-campus-tour.html -->
             <div class="project-grid">
               <article class="project-card">
-                <div class="project-visual">
-                  <img
-                    src="/assets/images/resilient-mind/home.jpg"
-                    width="858"
-                    height="573"
-                    alt="Landing page of Resilient Mind. Four cards introduce chat support, therapy booking, recovery programs, and community."
-                  />
+                <div class="project-visual project-visual--video">
+                  <div
+                    class="video-frame"
+                    data-youtube-lazy
+                    data-youtube-id="eLW-pHSrccw"
+                    data-youtube-title="Jupiter Health Exchange — Healthcare Data Platform demonstration"
+                  ></div>
                 </div>
-                <h3>Resilient Mind</h3>
+                <h3>Jupiter Health Exchange — Healthcare Data Platform</h3>
+                <p class="project-meta">
+                  <span>The Commons Project</span>
+                  <span>2025–2026</span>
+                </p>
                 <p class="muted">
-                  A mental health support prototype. Vue 3 and Firebase handle
-                  accounts. An AI chatbot calls OpenAI through a Cloud Function,
-                  and self-guided exercises run in the browser.
+                  Healthcare data platform developed at The Commons Project, featuring administrative
+                  interfaces for patient and user management, study configuration, and healthcare data
+                  workflows. Contributions included frontend development and Python/Django backend
+                  functionality.
                 </p>
                 <ul class="tech-list">
-                  <li>Vue 3</li>
-                  <li>Firebase</li>
-                  <li>OpenAI</li>
+                  <li>Python</li>
+                  <li>Django</li>
+                  <li>PostgreSQL</li>
+                  <li>JavaScript</li>
+                  <li>REST APIs</li>
+                  <li>OAuth 2.0</li>
+                  <li>Android</li>
                 </ul>
-                <a class="card-link" href="/work/resilient-mind/">Open case study</a>
               </article>
+              <article class="project-card">
+                <div class="project-visual project-visual--video">
+                  <div
+                    class="video-frame"
+                    data-youtube-lazy
+                    data-youtube-id="Bkm19ORhlek"
+                    data-youtube-title="Osmo x JCDecaux — Interactive WebAR Campaign demonstration"
+                  ></div>
+                </div>
+                <h3>Osmo x JCDecaux — Interactive WebAR Campaign</h3>
+                <p class="project-meta">
+                  <span>Geenee AR</span>
+                  <span>2021–2022</span>
+                </p>
+                <p class="muted">
+                  Custom WebAR advertising experience developed at Geenee AR, featuring marker-based
+                  tracking, an interactive 3D rocket-building puzzle, and an animated character.
+                  Launched as part of a multi-city US advertising campaign.
+                </p>
+                <ul class="tech-list">
+                  <li>React</li>
+                  <li>Three.js</li>
+                  <li>React Three Fiber</li>
+                  <li>WebGL</li>
+                  <li>Geenee AR SDK</li>
+                  <li>Marker Tracking</li>
+                </ul>
+              </article>
+              <article class="project-card">
+                <div class="project-visual project-visual--video">
+                  <div
+                    class="video-frame"
+                    data-youtube-lazy
+                    data-youtube-id="l2NOxpWU5xg"
+                    data-youtube-title="VBT — Interactive 3D Landing Page demonstration"
+                  ></div>
+                </div>
+                <h3>VBT — Interactive 3D Landing Page</h3>
+                <p class="project-meta">
+                  <span>Very Big Things</span>
+                  <span>2019–2020</span>
+                </p>
+                <p class="muted">
+                  Interactive 3D landing page built with React and Three.js, featuring scroll-driven
+                  model transformations, mouse-responsive interactions, and custom GLSL shader
+                  transitions.
+                </p>
+                <ul class="tech-list">
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>Three.js</li>
+                  <li>WebGL</li>
+                  <li>GLSL</li>
+                  <li>Tween.js</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="personal-projects" class="section" aria-labelledby="personal-projects-title">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="kicker">Personal projects</p>
+              <h2 id="personal-projects-title">Browser-based case studies in WebXR, AI-assisted apps, and WebAR tooling.</h2>
+            </div>
+            <div class="project-grid">
               <article class="project-card">
                 <div class="project-visual">
                   <img
@@ -155,9 +232,35 @@
                 <ul class="tech-list">
                   <li>Vue 3</li>
                   <li>TypeScript</li>
+                  <li>Pinia</li>
                   <li>Firebase</li>
+                  <li>GitHub Pages</li>
                 </ul>
                 <a class="card-link" href="/work/webxrflow/">Open case study</a>
+              </article>
+              <article class="project-card">
+                <div class="project-visual">
+                  <img
+                    src="/assets/images/resilient-mind/home.jpg"
+                    width="858"
+                    height="573"
+                    alt="Landing page of Resilient Mind. Four cards introduce chat support, therapy booking, recovery programs, and community."
+                  />
+                </div>
+                <h3>Resilient Mind</h3>
+                <p class="muted">
+                  A mental health support prototype. Vue 3 and Firebase handle
+                  accounts. An AI chatbot calls OpenAI through a Cloud Function,
+                  and self-guided exercises run in the browser.
+                </p>
+                <ul class="tech-list">
+                  <li>Vue 3</li>
+                  <li>TypeScript</li>
+                  <li>Firebase</li>
+                  <li>OpenAI</li>
+                  <li>GitHub Pages</li>
+                </ul>
+                <a class="card-link" href="/work/resilient-mind/">Open case study</a>
               </article>
               <article class="project-card">
                 <div class="project-visual">
@@ -176,7 +279,9 @@
                 <ul class="tech-list">
                   <li>WebAR</li>
                   <li>JavaScript</li>
+                  <li>Marker Tracking</li>
                   <li>3D</li>
+                  <li>Educational Technology</li>
                 </ul>
                 <a class="card-link" href="/work/webar-marker-generator/">Open case study</a>
               </article>
@@ -244,7 +349,7 @@
               </li>
               <li>
                 <span class="contact-key">CV</span>
-                <a href="/assets/documents/Oleh-Saveniuk-CV.pdf" download>Oleh-Saveniuk-CV.pdf</a>
+                <a href="/assets/documents/Oleh_Saveniuk_CV.pdf" download="Oleh_Saveniuk_CV.pdf">Oleh_Saveniuk_CV.pdf</a>
               </li>
             </ul>
           </div>
@@ -262,8 +367,8 @@
           </nav>
                     <nav class="footer-langs" aria-label="Language">
             <span aria-current="page">English</span>
-            <a href="/uk/" lang="uk" hreflang="uk">Українська</a>
             <a href="/de/" lang="de" hreflang="de">Deutsch</a>
+            <a href="/uk/" lang="uk" hreflang="uk">Українська</a>
           </nav>
           <p class="copyright">© <span data-copyright-year></span> Oleh Saveniuk. All rights reserved.</p>
         </div>
