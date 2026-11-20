@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/projects/preserved/
+
+Sitemap: https://saveniukoleh.com/sitemap.xml

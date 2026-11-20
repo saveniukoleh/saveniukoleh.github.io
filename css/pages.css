@@ -47,13 +47,6 @@
   font-size: var(--text-xl);
 }
 
-.stub-note {
-  padding: var(--space-lg);
-  border-left: 2px solid var(--color-accent);
-  color: var(--color-text-muted);
-  max-width: 40rem;
-}
-
 .case-study .section {
   padding-block: var(--space-2xl);
 }
