@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MW5MDWE7L6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MW5MDWE7L6');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Panda Weather — Oleh Saveniuk</title>
+    <meta
+      name="description"
+      content="Ein responsives Wetter-Dashboard. Vue 3, Pinia und Chart.js zeigen aktuelles Wetter und Prognosen. Ein Cloudflare Worker leitet OpenWeatherMap weiter und hält den API-Schlüssel vom Client fern."
+    />
+    <link rel="canonical" href="https://saveniukoleh.github.io/de/work/panda-weather/" />
+    <link rel="alternate" hreflang="en" href="https://saveniukoleh.github.io/work/panda-weather/" />
+    <link rel="alternate" hreflang="uk" href="https://saveniukoleh.github.io/uk/work/panda-weather/" />
+    <link rel="alternate" hreflang="de" href="https://saveniukoleh.github.io/de/work/panda-weather/" />
+    <link rel="alternate" hreflang="x-default" href="https://saveniukoleh.github.io/work/panda-weather/" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Oleh Saveniuk" />
+    <meta property="og:title" content="Panda Weather — Oleh Saveniuk" />
+    <meta
+      property="og:description"
+      content="Vue-3-Wetter-Dashboard mit Pinia, Chart.js und einem Cloudflare-Worker. Der OpenWeatherMap-Schlüssel bleibt auf dem Server."
+    />
+    <meta property="og:url" content="https://saveniukoleh.github.io/de/work/panda-weather/" />
+    <meta property="og:image" content="https://saveniukoleh.github.io/assets/images/panda-weather/dashboard.jpg" />
+    <meta property="og:image:alt" content="Panda-Weather-Dashboard mit fünf Stadtwidgets und 24-Stunden-Temperaturdiagrammen." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/assets/icons/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" sizes="180x180" />
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <div class="site">
+      <header class="site-header">
+        <div class="wrap header-inner">
+          <a class="logo" href="/de/">OLEH SAVENIUK</a>
+          <nav id="site-nav" class="site-nav" data-nav aria-label="Hauptnavigation">
+            <ul class="nav-list">
+              <li><a href="/de/#work">Arbeit</a></li>
+              <li><a href="/de/about/">Über mich</a></li>
+              <li><a href="/de/#contact">Kontakt</a></li>
+            </ul>
+          </nav>
+          <div class="header-tools">
+                        <nav class="lang-switch" aria-label="Sprache">
+              <a href="/work/panda-weather/" lang="en" hreflang="en">EN</a>
+              <span aria-hidden="true">/</span>
+              <span aria-current="page">DE</span>
+              <span aria-hidden="true">/</span>
+              <a href="/uk/work/panda-weather/" lang="uk" hreflang="uk">UA</a>
+            </nav>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+              Menu
+            </button>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <article class="case-study">
+          <header class="case-hero wrap">
+            <div class="case-intro">
+              <p class="kicker">Fallstudie</p>
+              <h1>Panda Weather</h1>
+              <p class="case-subtitle">
+                Ein responsives Wetter-Dashboard. Stadt suchen, bis zu fünf Widgets vergleichen und Favoriten im Browser behalten.
+              </p>
+              <dl class="case-meta">
+                <div>
+                  <dt>Role</dt>
+                  <dd>Solo developer</dd>
+                </div>
+                <div>
+                  <dt>Period</dt>
+                  <dd>2026</dd>
+                </div>
+                <div>
+                  <dt>Project type</dt>
+                  <dd>Wetter-Dashboard</dd>
+                </div>
+              </dl>
+              <ul class="tech-list" aria-label="Stack">
+                <li>Vue 3</li>
+                <li>TypeScript</li>
+                <li>Pinia</li>
+                <li>Chart.js</li>
+                <li>Cloudflare Workers</li>
+              </ul>
+            </div>
+            <figure class="case-figure shot">
+              <img
+                src="/assets/images/panda-weather/dashboard.jpg"
+                width="919"
+                height="2461"
+                alt="Panda-Weather-Dashboard auf Englisch. Fünf Widgets zeigen Kyiv, Berlin, Lisbon, Tokyo und Reykjavik, jeweils mit aktuellem Wetter und einem 24-Stunden-Diagramm."
+              />
+              <figcaption>
+                Fünf unabhängige Widgets. Das Diagramm für 24 Stunden nutzt die 3-Stunden-Slots des Anbieters, keine Stundenwerte.
+              </figcaption>
+            </figure>
+          </header>
+
+          <section class="section" aria-labelledby="overview-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Überblick</p>
+                <h2 id="overview-title">Ein Wetter-Dashboard als Assessment für Panda Team.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Die Ziele im Repository sind Stadtsuche mit Autovervollständigung, aktuelles Wetter, eine Temperaturprognose mit Chart.js, mehrere unabhängige Widgets, Favoriten, Englisch und Ukrainisch sowie ein Layout vom Telefon bis zur Desktop-Breite.
+                </p>
+                <p>
+                  Die ausgelieferte App deckt diese Liste ab. Es gibt keine Konten, keine Cloud-Synchronisierung der Favoriten und kein stündliches Prognoseprodukt. Der Fünf-Tage-Feed von OpenWeatherMap kommt in 3-Stunden-Schritten, und die Diagramme verwenden diese Zeitstempel.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="role-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Meine Rolle</p>
+                <h2 id="role-title">Die Vue-App, die Diagramme und der Worker.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Ich habe die Vue-3-Oberfläche, die Pinia-Stores, die Chart.js-Diagramme und den Cloudflare Worker gebaut, der OpenWeatherMap weiterleitet. GitHub Actions veröffentlicht den Produktionsbuild von <code>main</code> auf GitHub Pages.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="architecture-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Architektur</p>
+                <h2 id="architecture-title">Vue und Pinia vor einem Worker.</h2>
+              </div>
+              <figure class="case-figure">
+                <div class="arch-grid">
+                  <article>
+                    <h3>Vue-App</h3>
+                    <p>Composition API, gemeinsames Layout und die Ansichten Wetter und Favoriten. Die Tabs sind Anwendungszustand. Vue Router wird nicht verwendet.</p>
+                  </article>
+                  <article>
+                    <h3>Pinia</h3>
+                    <p>Dashboard-Widgets bleiben in der Sitzung. Favoriten, Sprache und das Tag/Nacht-Thema sind die Werte in <code>localStorage</code>.</p>
+                  </article>
+                  <article>
+                    <h3>Services</h3>
+                    <p>Komponenten rufen OpenWeatherMap nicht auf. Typisierte Services nutzen <code>fetch</code> gegen den Worker und liefern normalisierte Wettermodelle.</p>
+                  </article>
+                </div>
+                <figcaption>
+                  Vite 6 baut das Frontend. Vitest prüft Stores, Suche, Prognoserechnung und den Worker-Proxy. Das Styling ist natives CSS, ohne UI-Kit.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="search-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Stadtsuche</p>
+                <h2 id="search-title">Eine Anfrage, ein Widget.</h2>
+              </div>
+              <ol class="workflow">
+                <li>
+                  <span>01</span>
+                  <p>Die Autovervollständigung wartet 300&nbsp;ms, ignoriert eine getrimmte Anfrage unter 2 Zeichen und bricht die vorherige Suche ab.</p>
+                </li>
+                <li>
+                  <span>02</span>
+                  <p>Ein Vorschlag setzt den Ort nur in diesem Widget. Die Suche eines anderen Widgets ändert ihn nicht.</p>
+                </li>
+                <li>
+                  <span>03</span>
+                  <p>Aktuelles Wetter und Prognose laden zusammen. Eine späte Antwort bleibt nur, wenn sie noch zu diesem Widget gehört.</p>
+                </li>
+                <li>
+                  <span>04</span>
+                  <p>Das Dashboard startet mit einem Widget und endet bei fünf. Entfernen fragt nach Bestätigung. Das letzte Widget bleibt.</p>
+                </li>
+              </ol>
+              <div class="case-copy">
+                <p>
+                  Das erste Widget kann mit einem ungefähren Ort aus der IP starten. Fehlt diese Abfrage oder schlägt sie fehl, ist die Ersatzstadt London. Der Browser fragt nicht nach GPS.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="forecast-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Prognose</p>
+                <h2 id="forecast-title">Aktuelles Wetter, dann zwei Diagrammbereiche.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Jede Karte zeigt Stadt, Temperatur in Celsius, ein Wettericon und, wenn die Antwort sie enthält, gefühlte Temperatur, Luftfeuchte, Wind und Druck. Wind ist Meter pro Sekunde. Fehlende optionale Felder bleiben ausgeblendet.
+                </p>
+                <p>
+                  24 Stunden zeichnet die 3-Stunden-Einträge von jetzt bis in 24 Stunden, in der Zeitzone der Stadt. 5 Tage behält die ersten fünf lokalen Daten und zeigt den Mittelwert der vorhandenen Temperaturen je Datum. Fehlende Slots werden nicht erfunden. Chart.js läuft direkt auf dem Canvas, eine Instanz pro Widget, und diese Instanz wird beim Entfernen zerstört.
+                </p>
+              </div>
+              <figure class="case-figure shot">
+                <img
+                  src="/assets/images/panda-weather/forecast.jpg"
+                  width="919"
+                  height="1040"
+                  alt="Fünf-Tage-Prognose für Lisbon und Tokyo. Jedes Widget zeigt Tageskarten und ein Diagramm mit Datumslabels."
+                />
+                <figcaption>
+                  5 Tage für Lisbon und Tokyo. Karten und Diagramm nutzen Tagesmittel aus der 3-Stunden-Prognose.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="favorites-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Favoriten</p>
+                <h2 id="favorites-title">Gespeicherte Städte und eine zweite Sprache.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Favoriten ist ein eigener Tab. Diese Widgets zeigen Wetter ohne Stadtsuche. Eine Stadt wird über Breiten- und Längengrad gespeichert, ein zweiter gleicher Name erzeugt keinen zweiten Eintrag. Die Liste endet bei fünf Städten. Ein weiterer Versuch erklärt, dass zuerst ein Favorit entfernt werden muss. Nur die Städteliste geht nach <code>localStorage</code>. Prognosedaten bleiben im Speicher.
+                </p>
+                <p>
+                  Die Oberfläche ist Englisch und Ukrainisch. Wetterbeschreibungen werden mit <code>lang=en</code> oder <code>lang=uk</code> angefragt. Tag und Nacht sind ein gespeichertes Thema, Standard ist Tag. Das Thema hängt nicht an der Uhr und nicht am Schalter 24 Stunden / 5 Tage. Eine fehlende oder unlesbare Einstellung fällt auf Englisch und Tag zurück.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="proxy-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">API-Proxy</p>
+                <h2 id="proxy-title">Der Schlüssel bleibt auf dem Worker.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Der Browser ruft nur den Cloudflare Worker dieses Projekts auf: <code>GET /geocoding</code>, <code>GET /weather</code> und <code>GET /forecast</code>. Der Worker prüft die Query, ruft OpenWeatherMap mit <code>units=metric</code> auf und setzt <code>appid</code> aus dem Secret <code>OPENWEATHER_API_KEY</code>. Dieses Secret ist keine Vite-Variable, kein Teil des Frontend-Bundles und keine GitHub-Actions-Variable.
+                </p>
+                <p>
+                  Der Produktionsbuild lehnt eine <code>http</code>-Basis-URL und einen Host <code>openweathermap.org</code> ab. Der deployte Worker erlaubt die Portfolio-Origins sowie lokales <code>localhost</code> und <code>127.0.0.1</code>. CORS ist eine Browser-Prüfung, kein Login. Die App hat keine Benutzeranmeldung. Fehlerkörper des Anbieters und jede Nutzlast mit dem Schlüssel gehen nicht an den Browser zurück.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="decisions-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Oberfläche</p>
+                <h2 id="decisions-title">Responsives Layout und ein paar feste Grenzen.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Das Widget-Raster hat auf einem breiten Bildschirm drei Spalten, ab 1024&nbsp;px zwei Spalten und ab 640&nbsp;px eine Spalte. Die minimale Breite in der Spezifikation ist 360&nbsp;px, die Desktop-Referenz 1200&nbsp;px. Stadtvorschläge, die Tabs Wetter und Favoriten und die Bestätigungsdialoge sind per Tastatur bedienbar. Jedes Widget hat eigenen Lade- und Fehlerzustand, eine fehlgeschlagene Anfrage lässt die anderen stehen.
+                </p>
+                <p>
+                  Rohe OpenWeatherMap-Antworten bleiben in der Service-Schicht. Die Oberfläche liest normalisierte TypeScript-Modelle. Es gibt keinen <code>vue-chartjs</code>-Wrapper, kein CSS-Framework und keinen Vue Router. Ein Rate-Limit des Anbieters ist im Worker nicht eingebaut. Ein HTTP 429 des Anbieters wird als Rate-Limit-Fehler angezeigt, wenn er auftritt.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="links-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Links</p>
+                <h2 id="links-title">App und Quellcode.</h2>
+              </div>
+              <ul class="resource-list">
+                <li>
+                  <p class="kicker">Live-App</p>
+                  <p class="pub-title">
+                    <a href="https://saveniukoleh.com/panda-weather-app/" target="_blank" rel="noopener noreferrer">saveniukoleh.com/panda-weather-app</a>
+                  </p>
+                  <p class="muted">Produktionsbuild auf GitHub Pages. Wetteranfragen gehen an den Cloudflare Worker.</p>
+                </li>
+                <li>
+                  <p class="kicker">Repository</p>
+                  <p class="pub-title">
+                    <a href="https://github.com/saveniukoleh/panda-weather-app" target="_blank" rel="noopener noreferrer">github.com/saveniukoleh/panda-weather-app</a>
+                  </p>
+                  <p class="muted">Vue-3-App, Worker-Proxy, Tests und der GitHub-Pages-Workflow.</p>
+                </li>
+              </ul>
+              <p class="case-cta">
+                Interesse an Zusammenarbeit? <a href="/de/#contact">Kontakt aufnehmen</a>.
+              </p>
+              <p class="case-back">
+                <a class="card-link" href="/de/#work">Zurück zu Arbeit</a>
+              </p>
+            </div>
+          </section>
+        </article>
+      </main>
+      <footer class="site-footer">
+        <div class="wrap footer-grid">
+          <nav aria-label="Fußzeile">
+            <ul class="footer-nav">
+              <li><a href="/de/#work">Arbeit</a></li>
+              <li><a href="/de/about/">Über mich</a></li>
+              <li><a href="/de/#contact">Kontakt</a></li>
+            </ul>
+          </nav>
+                    <nav class="footer-langs" aria-label="Sprache">
+            <a href="/work/panda-weather/" lang="en" hreflang="en">English</a>
+            <span aria-current="page">Deutsch</span>
+            <a href="/uk/work/panda-weather/" lang="uk" hreflang="uk">Українська</a>
+          </nav>
+          <p class="copyright">© <span data-copyright-year></span> Oleh Saveniuk. Alle Rechte vorbehalten.</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

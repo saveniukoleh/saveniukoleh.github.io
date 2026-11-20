@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MW5MDWE7L6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MW5MDWE7L6');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Panda Weather — Олег Савенюк</title>
+    <meta
+      name="description"
+      content="Адаптивна панель погоди. Vue 3, Pinia і Chart.js показують поточні умови та прогноз. Cloudflare Worker проксує OpenWeatherMap і не віддає ключ API клієнту."
+    />
+    <link rel="canonical" href="https://saveniukoleh.github.io/uk/work/panda-weather/" />
+    <link rel="alternate" hreflang="en" href="https://saveniukoleh.github.io/work/panda-weather/" />
+    <link rel="alternate" hreflang="uk" href="https://saveniukoleh.github.io/uk/work/panda-weather/" />
+    <link rel="alternate" hreflang="de" href="https://saveniukoleh.github.io/de/work/panda-weather/" />
+    <link rel="alternate" hreflang="x-default" href="https://saveniukoleh.github.io/work/panda-weather/" />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Олег Савенюк" />
+    <meta property="og:title" content="Panda Weather — Олег Савенюк" />
+    <meta
+      property="og:description"
+      content="Панель погоди на Vue 3 з Pinia, Chart.js і проксі на Cloudflare Worker. Ключ OpenWeatherMap лишається на сервері."
+    />
+    <meta property="og:url" content="https://saveniukoleh.github.io/uk/work/panda-weather/" />
+    <meta property="og:image" content="https://saveniukoleh.github.io/assets/images/panda-weather/dashboard.jpg" />
+    <meta property="og:image:alt" content="Панель Panda Weather із п’ятьма віджетами міст і графіками температури на 24 години." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/assets/icons/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" sizes="180x180" />
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти до змісту</a>
+    <div class="site">
+      <header class="site-header">
+        <div class="wrap header-inner">
+          <a class="logo" href="/uk/">OLEH SAVENIUK</a>
+          <nav id="site-nav" class="site-nav" data-nav aria-label="Основна навігація">
+            <ul class="nav-list">
+              <li><a href="/uk/#work">Роботи</a></li>
+              <li><a href="/uk/about/">Про мене</a></li>
+              <li><a href="/uk/#contact">Контакт</a></li>
+            </ul>
+          </nav>
+          <div class="header-tools">
+                        <nav class="lang-switch" aria-label="Мова">
+              <a href="/work/panda-weather/" lang="en" hreflang="en">EN</a>
+              <span aria-hidden="true">/</span>
+              <a href="/de/work/panda-weather/" lang="de" hreflang="de">DE</a>
+              <span aria-hidden="true">/</span>
+              <span aria-current="page">UA</span>
+            </nav>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+              Меню
+            </button>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <article class="case-study">
+          <header class="case-hero wrap">
+            <div class="case-intro">
+              <p class="kicker">Кейс</p>
+              <h1>Panda Weather</h1>
+              <p class="case-subtitle">
+                Адаптивна панель погоди. Пошук міста, до п’яти віджетів для порівняння і обране в браузері.
+              </p>
+              <dl class="case-meta">
+                <div>
+                  <dt>Роль</dt>
+                  <dd>Самостійний розробник</dd>
+                </div>
+                <div>
+                  <dt>Період</dt>
+                  <dd>2026</dd>
+                </div>
+                <div>
+                  <dt>Тип проєкту</dt>
+                  <dd>Панель погоди</dd>
+                </div>
+              </dl>
+              <ul class="tech-list" aria-label="Стек">
+                <li>Vue 3</li>
+                <li>TypeScript</li>
+                <li>Pinia</li>
+                <li>Chart.js</li>
+                <li>Cloudflare Workers</li>
+              </ul>
+            </div>
+            <figure class="case-figure shot">
+              <img
+                src="/assets/images/panda-weather/dashboard.jpg"
+                width="919"
+                height="2461"
+                alt="Панель Panda Weather англійською. П’ять віджетів показують Київ, Берлін, Лісабон, Токіо та Рейк’явік, кожен із поточною погодою і графіком на 24 години."
+              />
+              <figcaption>
+                П’ять незалежних віджетів. Графік на 24 години використовує тригодинні слоти провайдера, а не щогодинні точки.
+              </figcaption>
+            </figure>
+          </header>
+
+          <section class="section" aria-labelledby="overview-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Огляд</p>
+                <h2 id="overview-title">Панель погоди як тестове завдання для Panda Team.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Цілі в репозиторії: пошук міста з автодоповненням, поточна погода, температурний прогноз на Chart.js, кілька незалежних віджетів, обрані міста, англійська й українська, і макет від телефона до ширини десктопа.
+                </p>
+                <p>
+                  Опублікований застосунок закриває цей список. Облікових записів немає, обране не синхронізується в хмару, і немає щогодинного продукту прогнозу. П’ятиденний канал OpenWeatherMap приходить кроком у три години, і графіки використовують ці мітки часу.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="role-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Моя роль</p>
+                <h2 id="role-title">Застосунок Vue, графіки і Worker.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Я зібрав інтерфейс на Vue 3, сховища Pinia, графіки Chart.js і Cloudflare Worker, який проксує OpenWeatherMap. GitHub Actions публікує продакшен-збірку з <code>main</code> на GitHub Pages.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="architecture-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Архітектура</p>
+                <h2 id="architecture-title">Vue і Pinia перед одним Worker.</h2>
+              </div>
+              <figure class="case-figure">
+                <div class="arch-grid">
+                  <article>
+                    <h3>Застосунок Vue</h3>
+                    <p>Composition API, спільний каркас і екрани Погода та Обране. Вкладки — це стан застосунку. Vue Router не використовується.</p>
+                  </article>
+                  <article>
+                    <h3>Pinia</h3>
+                    <p>Віджети панелі живуть у сесії. В <code>localStorage</code> записуються обрані міста, мова і тема День/Ніч.</p>
+                  </article>
+                  <article>
+                    <h3>Сервіси</h3>
+                    <p>Компоненти не викликають OpenWeatherMap. Типізовані сервіси ходять <code>fetch</code> до Worker і повертають нормалізовані моделі погоди.</p>
+                  </article>
+                </div>
+                <figcaption>
+                  Vite 6 збирає фронтенд. Vitest покриває сховища, пошук, розрахунок прогнозу і проксі Worker. Стилі — звичайний CSS, без UI-бібліотеки.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="search-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Пошук міста</p>
+                <h2 id="search-title">Один запит, один віджет.</h2>
+              </div>
+              <ol class="workflow">
+                <li>
+                  <span>01</span>
+                  <p>Автодоповнення чекає 300&nbsp;мс, пропускає запит коротший за 2 символи після обрізання пробілів і скасовує попередній пошук.</p>
+                </li>
+                <li>
+                  <span>02</span>
+                  <p>Вибір підказки задає місце лише цьому віджету. Пошук в іншому віджеті його не змінює.</p>
+                </li>
+                <li>
+                  <span>03</span>
+                  <p>Поточна погода і прогноз завантажуються разом. Пізня відповідь лишається лише якщо вона ще належить цьому віджету.</p>
+                </li>
+                <li>
+                  <span>04</span>
+                  <p>Панель відкривається з одним віджетом і зупиняється на п’яти. Видалення питає підтвердження. Останній віджет прибрати не можна.</p>
+                </li>
+              </ol>
+              <div class="case-copy">
+                <p>
+                  Перший віджет може почати з приблизного міста за IP. Якщо пошук відсутній або не вдався, запасне місто — Лондон. Браузер не просить GPS.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="forecast-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Прогноз</p>
+                <h2 id="forecast-title">Поточні умови, потім два діапазони графіка.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Кожна картка показує місто, температуру в Цельсіях, іконку стану і, якщо відповідь їх містить, «відчувається як», вологість, вітер і тиск. Вітер — у метрах за секунду. Порожні необов’язкові поля ховаються, а не заповнюються.
+                </p>
+                <p>
+                  «24 години» малює тригодинні точки від поточного часу і на 24 години вперед, у зміщенні міста. «5 днів» лишає перші п’ять місцевих дат і показує середнє наявних температур за кожну дату. Пропущені слоти не вигадуються. Chart.js працює прямо на canvas, один екземпляр на віджет, і цей екземпляр знищується, коли віджет зникає.
+                </p>
+              </div>
+              <figure class="case-figure shot">
+                <img
+                  src="/assets/images/panda-weather/forecast.jpg"
+                  width="919"
+                  height="1040"
+                  alt="П’ятиденний прогноз для Лісабона і Токіо. Кожен віджет показує денні картки і графік із датами."
+                />
+                <figcaption>
+                  «5 днів» для Лісабона і Токіо. Картки і графік беруть середні за день із тригодинного прогнозу.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="favorites-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Обране</p>
+                <h2 id="favorites-title">Збережені міста і друга мова.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Обране — окрема вкладка. Ці віджети показують погоду без пошуку міста. Місто зберігається за широтою і довготою, тож повторна назва не створює другий запис. Список зупиняється на п’яти містах. Ще одне додавання пояснює, що спочатку треба прибрати одне обране. У <code>localStorage</code> пишеться лише список міст. Дані прогнозу лишаються в пам’яті.
+                </p>
+                <p>
+                  Інтерфейс англійською та українською. Описи погоди запитуються з <code>lang=en</code> або <code>lang=uk</code>. День і Ніч — збережена тема, за замовчуванням День. Тема не береться з годинника і не пов’язана з перемикачем «24 години» / «5 днів». Відсутнє або нечитабельне налаштування повертає англійську і День.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="proxy-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Проксі API</p>
+                <h2 id="proxy-title">Ключ лишається на Worker.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Браузер викликає лише Cloudflare Worker цього проєкту: <code>GET /geocoding</code>, <code>GET /weather</code> і <code>GET /forecast</code>. Worker перевіряє параметри, викликає OpenWeatherMap з <code>units=metric</code> і додає <code>appid</code> із секрету <code>OPENWEATHER_API_KEY</code>. Цей секрет не є змінною Vite, не входить у бандл фронтенду і не є змінною GitHub Actions.
+                </p>
+                <p>
+                  Продакшен-збірка відхиляє базову адресу <code>http</code> і хост <code>openweathermap.org</code>. Задеплоєний Worker дозволяє походження портфоліо, а також локальні <code>localhost</code> і <code>127.0.0.1</code>. CORS — це перевірка браузера, а не вхід. Автентифікації користувача немає. Тіла помилок провайдера і будь-яке тіло з ключем браузеру не повертаються.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="decisions-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Інтерфейс</p>
+                <h2 id="decisions-title">Адаптивний макет і кілька жорстких меж.</h2>
+              </div>
+              <div class="case-copy">
+                <p>
+                  Сітка віджетів має три колонки на широкому екрані, дві колонки від 1024&nbsp;px і одну від 640&nbsp;px. Мінімальна ширина в специфікації — 360&nbsp;px, орієнтир десктопного контейнера — 1200&nbsp;px. Підказки міст, вкладки Погода й Обране і діалоги підтвердження доступні з клавіатури. У кожного віджета свій стан завантаження і помилки, тож невдалий запит не чіпає інші міста.
+                </p>
+                <p>
+                  Сирі відповіді OpenWeatherMap лишаються в шарі сервісів. Інтерфейс читає нормалізовані моделі TypeScript. Немає обгортки <code>vue-chartjs</code>, CSS-фреймворку і Vue Router. Обмеження частоти провайдера у Worker не реалізоване. HTTP 429 провайдера показується як помилка ліміту, коли вона стається.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="links-title">
+            <div class="wrap">
+              <div class="section-head">
+                <p class="kicker">Посилання</p>
+                <h2 id="links-title">Застосунок і код.</h2>
+              </div>
+              <ul class="resource-list">
+                <li>
+                  <p class="kicker">Живий застосунок</p>
+                  <p class="pub-title">
+                    <a href="https://saveniukoleh.com/panda-weather-app/" target="_blank" rel="noopener noreferrer">saveniukoleh.com/panda-weather-app</a>
+                  </p>
+                  <p class="muted">Продакшен-збірка на GitHub Pages. Запити погоди йдуть на Cloudflare Worker.</p>
+                </li>
+                <li>
+                  <p class="kicker">Репозиторій</p>
+                  <p class="pub-title">
+                    <a href="https://github.com/saveniukoleh/panda-weather-app" target="_blank" rel="noopener noreferrer">github.com/saveniukoleh/panda-weather-app</a>
+                  </p>
+                  <p class="muted">Застосунок Vue 3, проксі Worker, тести і workflow GitHub Pages.</p>
+                </li>
+              </ul>
+              <p class="case-cta">
+                Хочете обговорити співпрацю? <a href="/uk/#contact">Напишіть мені</a>.
+              </p>
+              <p class="case-back">
+                <a class="card-link" href="/uk/#work">До робіт</a>
+              </p>
+            </div>
+          </section>
+        </article>
+      </main>
+      <footer class="site-footer">
+        <div class="wrap footer-grid">
+          <nav aria-label="Підвал">
+            <ul class="footer-nav">
+              <li><a href="/uk/#work">Роботи</a></li>
+              <li><a href="/uk/about/">Про мене</a></li>
+              <li><a href="/uk/#contact">Контакт</a></li>
+            </ul>
+          </nav>
+                    <nav class="footer-langs" aria-label="Мова">
+            <a href="/work/panda-weather/" lang="en" hreflang="en">English</a>
+            <a href="/de/work/panda-weather/" lang="de" hreflang="de">Deutsch</a>
+            <span aria-current="page">Українська</span>
+          </nav>
+          <p class="copyright">© <span data-copyright-year></span> Oleh Saveniuk. Усі права захищено.</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
